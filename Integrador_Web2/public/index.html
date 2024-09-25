@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INTEGRADOR MUSEO METROPOLITANO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- bootstrap -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- google fonts -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- mi estilo -->
+
+    <link rel="icon" href="img/icon.png" />
+    <!-- icono Museo Metropolitano -->
+
+    <script src="script.js" defer> </script>
+</head>
+
+<body>
+
+
+    <!-------------------------------------------------------BARRA NAVEGADORA--------------------------------------------------------->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container ">
+            <a class="navbar-brand ">
+                <img src="img/icon.png" alt="Logo" class="d-inline-block align-middle" />
+                Integrador Museo Metropolitano</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-lg-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#horarios">Horarios</a>
+                    <a class="nav-link" href="#buscador">Buscardor de Objetos</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="https://www.metmuseum.org/">Museo Metropolitano</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://metmuseum.github.io/">Documentacion API Museo</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-------------------------------------------------------CUERPO--------------------------------------------------------->
+    <main class="bg-gradient-blue-green">
+        <div class="container">
+
+
+            <!-------------------------------------------------------PRESENTACION--------------------------------------------------------->
+            <section class="row text-white align-items-lg-center" style="min-height: 90vh;">
+
+                <article class="col-12 col-lg-12">
+                    <p class="text-center display-1"> Bienvenidos al Met</p>
+                </article>
+
+                <article class="col-12 col-lg-7 ">
+                    <h3>Museo Metropolitano de Arte</h3>
+                    <p class="fs-6">
+                        El Museo Metropolitano de Arte presenta más de 5000 años de arte de todo el mundo para que todos
+                        puedan experimentarlo y disfrutarlo. El museo se encuentra en dos lugares emblemáticos de la
+                        ciudad de Nueva York: el Met de la Quinta Avenida y el Met Cloisters. Millones de personas
+                        también participan en la experiencia del Met en línea.
+
+                        Desde su fundación en 1870, el Met siempre ha aspirado a ser más que un tesoro de objetos raros
+                        y hermosos. Cada día, el arte cobra vida en las galerías del museo y a través de sus
+                        exposiciones y eventos, revelando nuevas ideas y conexiones inesperadas a través del tiempo y de
+                        las culturas.
+                    </p>
+                </article>
+
+                <article class="col-12 col-lg-5">
+                    <img class="img-fluid " src="img/Museo.jpg" alt="Museo Metropolitano" />
+                </article>
+
+                <article class="col-12 col-lg-5">
+                    <img class="img-fluid " src="img/Museo2.jpg" alt="Museo Metropolitano" />
+                </article>
+
+                <article class="col-12 col-lg-7">
+                    <p class="fs-6">
+                        El Museo Metropolitano de Arte ofrece conjuntos de datos seleccionados con información sobre más
+                        de 470.000 obras de arte de su colección para uso comercial y no comercial sin restricciones. En
+                        la medida en que lo permita la ley, el Museo Metropolitano de Arte ha renunciado a todos los
+                        derechos de autor y derechos conexos o vecinos de este conjunto de datos utilizando la licencia
+                        <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color: white;">Creative
+                            Commons Zero </a>. Esta obra se publica desde los Estados Unidos de América. Estos
+                        conjuntos de datos seleccionados ahora están disponibles para su uso en cualquier medio sin
+                        permiso ni pago; también incluyen datos de identificación de obras de arte sujetas a derechos de
+                        autor. Los conjuntos de datos respaldan la búsqueda, el uso y la interacción con la colección
+                        del Museo.
+                    </p>
+                </article>
+            </section><!---FIN PRESENTACION--->
+
+            <!-------------------------------------------------------UBICACION y HORARIOS--------------------------------------------------------->
+            <section class="row text-white align-items-lg-center min-vh-100 pt-5" id="horarios">
+
+                <article class="col-12 col-lg-12 ">
+                    <p class="text-center display-4">Horarios</p>
+                </article>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/El Met de la Quinta Avenida.jpg" class="card-img-top bg-d-color"
+                                alt="Met de la quinta avenida" />
+                            <div class="card-body">
+                                <h2 class="card-title">El Met de la Quinta Avenida</h2>
+                                <p class="card-text">
+                                    Más de 5.000 años de arte de todo el mundo.
+                                </p>
+                                <ul>
+                                    <li><b>Horario: </b>Domingo a martes y Jueves: 10 a 17 h.</li>
+                                    <li><b>Horario extendido: </b>Viernes y Sábado: 10 a. m. a 9 p. m.</li>
+                                    <li><b>Cerrado: </b>Miércoles</li>
+                                </ul>
+
+                                <a href="https://www.metmuseum.org/plan-your-visit/met-fifth-avenue" class="">
+                                    Más detalles
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/Los Claustros del Met.jpg" class="card-img-top bg-d-color"
+                                alt="Met de la quinta avenida" />
+                            <div class="card-body">
+                                <h2 class="card-title">El Met de la Quinta Avenida</h2>
+                                <p class="card-text">
+                                    Arte, arquitectura y jardines de la Europa medieval.
+                                </p>
+                                <ul>
+                                    <li><b>Horario: </b>Jueves y Martes: 10:00 a 17:00 horas</li>
+                                    <li><b>Cerrado: </b>Miércoles</li>
+
+                                </ul>
+
+                                <a href="https://www.metmuseum.org/plan-your-visit/met-cloisters" class="">
+                                    Más detalles
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!---FIN HORARIOS--->
+
+
+            <!-------------------------------------------------------BUSCADOR--------------------------------------------------------->
+            <section class="row text-white align-items-lg-center min-vh-100 pt-5" id="buscador">
+                <section class="row text-white align-items-lg-center buscador altura ">
+
+                    <article class="col-12 col-lg-12">
+                        <p class="text-center display-4">Buscador de Objetos de Arte</p>
+                    </article>
+
+
+                    <article class="col-12 col-lg-4">
+                        <label class="form-label" for="palabra clave">Palabra Clave:</label>
+                        <input class="form-control" id="palabra clave" name="palabra clave"
+                            placeholder="Ingrese Palabra Clave">
+                    </article>
+
+                    <article class="col-12 col-lg-3">
+                        <label class="form-label" for="departamento">Departamento:</label>
+                        <input class="form-control" list="listaDepartamentos" id="departamento"
+                            placeholder="Ingrese Departamento">
+                        <datalist id="listaDepartamentos">
+
+                        </datalist>
+                    </article>
+
+                    <article class="col-12 col-lg-4 ">
+                        <label class="form-label" for="localidad">Localidad:</label>
+                        <input class="form-control" list="listaLocalidad" id="localidad"
+                            placeholder="Ingrese Localidad">
+                        <datalist id="listaLocalidad">
+
+                        </datalist>
+                    </article>
+
+                    <article class="col-12 col-lg-1 " style="padding-top: 32px;">
+                        <imput type="submit" class="btn btn-md btn-success" onclick="obtenerValor()" value="Enviar">
+                        </imput>
+                        Buscar</imput>
+                    </article>
+                </section>
+
+                <!-------------------------------------------------------TARJETAS--------------------------------------------------------->
+                <!-- AGREGAR MODAL A CADA TARJETA, EN LAS FOTOS SI HAY TIEMPO -->
+
+                <section class="row text-white align-items-lg-start mb-5" id="tarjetas">
+
+
+                </section>
+
+
+            </section><!--- FIN TARJETAS--->
+
+
+
+            <!-------------------------------------------------------MODAL--------------------------------------------------------->
+            
+            <div class="modal fade" id="imagenesModal" tabindex="-1" aria-labelledby="imagenesModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imagenesModalLabel">Imágenes Adicionales</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="imagenesAdicionales" class="d-flex flex-wrap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main> <!--- FIN CUERPO--->
+
+
+    <!-------------------------------------------------------FOOTER--------------------------------------------------------->
+    <footer class="bg-dark p-3">
+        <div class="container  text-center">
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://www.facebook.com/metmuseum" target="_blanck"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="https://x.com/metmuseum" target="_blanck"><i class="bi bi-twitter-x fs-4"></i></a>
+                <a href="https://ar.pinterest.com/metmuseum/" target="_blanck"><i class="bi bi-pinterest fs-4"></i></a>
+                <a href="https://www.instagram.com/metmuseum/" target="_blanck"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="https://www.youtube.com/user/metmuseum" target="_blanck"><i class="bi bi-youtube fs-4"></i></a>
+            </nav>
+            <small class="text-white">&copy; 2024 - Becerra Diaz Gabriel Ezequiel - Integrador Programacion Web II -
+                Hecho con Fines educativos </Hecho></small>
+        </div>
+    </footer><!--- FIN FOOTER--->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

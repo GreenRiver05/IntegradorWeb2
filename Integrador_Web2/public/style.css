@@ -1,0 +1,115 @@
+/* ******************* Custom Properties ************ (MIS VARIABLES)*/
+:root {
+  --first-color: rgb(20, 25, 45);
+  --first-alpha-color: rgba(20, 25, 45, 0.75);
+  --second-color: rgb(228, 0, 43);
+  --second-alpha-color: rgba(228, 0, 43, 0.75);
+  --link-color: rgb(251, 251, 251);
+  --link-alpha-color: rgba(80, 158, 227, 0.75);
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+/* ******************* Reset Styles  ************ (Resetear etiquetas)*/
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  color: var(--first-color);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--link-alpha-color);
+}
+
+/* ******************* Bootstrap Styles ************ (Modificar clases utilitarias, auxiliars Bootstap)*/
+.altura {
+  min-height: 25vh;
+  margin-left: 0px;
+}
+
+.bg-dark {
+  background-color: var(--second-color) !important;
+}
+
+.dropdown-item {
+  color: var(--first-alpha-color);
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-item:hover {
+  color: var(--second-alpha-color);
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 25, 45, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 50px;
+}
+
+.nav-link {
+  padding-left: 0.5rem;
+  transition: all 0.3s ease-out;
+  color: var(--first-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.nav-link:hover {
+  background-color: var(--first-alpha-color);
+  color: var(--bs-white);
+}
+
+/* ******************* My Styles ************ (MIS VARIABLES)*/
+.bg-gradient-blue-green {
+  background-color: rgba(20, 25, 45, 1);
+  background-image: linear-gradient(
+    131deg,
+    rgba(20, 25, 45, 1),
+    rgba(14, 104, 159, 0.91)
+  );
+}
+
+.buscador {
+  background-color: var(--second-color);
+  border-radius: 30px;
+}
+
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-link:hover {
+    background-color: transparent;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
