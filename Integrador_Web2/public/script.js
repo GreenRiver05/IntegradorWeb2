@@ -4,6 +4,9 @@ const URL_OBJETOID = "https://collectionapi.metmuseum.org/public/collection/v1/o
 const URL_OBJETOSPRESENTACION = "https://collectionapi.metmuseum.org/public/collection/v1/search?isHighlight=true&q=&hasImages=true";
 const URL_BUSCAR = "https://collectionapi.metmuseum.org/public/collection/v1/search?"
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]') //tooltips
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 const $tarjetas = document.getElementById("tarjetas"),
     $fragmentTarjetas = document.createDocumentFragment();
 
@@ -12,12 +15,6 @@ const $departamento = document.getElementById("listaDepartamentos"),
 
 const $localidades = document.getElementById("listaLocalidad"),
     $fragmentLocalidades = document.createDocumentFragment();
-
-
-
-
-
-
 
 
 async function cargarDepartamentos() {
@@ -130,7 +127,7 @@ async function cargarArtes(objectIDs) {
                                         <p class="card-text">
                                            <b>Dinastía:</b>  ${jsonObjeto.dynasty.trim() !== "" ? datosTraducidos[0].dinastia : `<span style="color: red;">${datosTraducidos[0].dinastia}</span>`}
                                         </p>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagenesModal" onclick="cargarImagenesAdicionales(${el})">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagenesModal" onclick="cargarImagenesAdicionales(${el},'${datosTraducidos[0].titulo}')">
                                         Fotos Adicionales
                                         </button>
                                     </div>
@@ -153,7 +150,7 @@ async function cargarArtes(objectIDs) {
 }
 
 
-async function cargarImagenesAdicionales(objectID) {
+async function cargarImagenesAdicionales(objectID, tituloTraducido) {
     try {
 
         let resObjeto = await fetch(URL_OBJETOID + objectID);
@@ -179,7 +176,7 @@ async function cargarImagenesAdicionales(objectID) {
             </div>
         `).join('');
 
-        
+        document.getElementById("imagenesModalLabel").innerHTML = jsonObjeto.title.trim() !== "" ? tituloTraducido : `<span style="color: red;">${tituloTraducido}</span>`;
         document.getElementById('imagenesAdicionales').innerHTML = imagenesHTML;
     } catch (err) {
         console.error(`Error al cargar imágenes adicionales para el ID ${objectID}: ${err.message}`);

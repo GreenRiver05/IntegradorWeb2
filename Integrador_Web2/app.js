@@ -14,7 +14,7 @@ import { Console } from "console";
 
 
 const app = express(); //Creamos una instancia de una aplicación Express.
-const port = 8000; //definimos el numero de puerto en el que el servidor escuchara en el server.listen(port)
+const port = 8100; //definimos el numero de puerto en el que el servidor escuchara en el server.listen(port)
 app.use(express.urlencoded({ extended: true })); //middleware ¿?
 const __filename = fileURLToPath(import.meta.url); //obtenemos el nombre del archivo actual
 const __dirname = path.dirname(__filename); //obtenemos el directorio del archivo actual
