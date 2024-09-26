@@ -10,10 +10,10 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 const $tarjetas = document.getElementById("tarjetas"),
     $fragmentTarjetas = document.createDocumentFragment();
 
-const $departamento = document.getElementById("listaDepartamentos"),
+const $listaDepartamentos = document.getElementById("listaDepartamentos"),
     $fragmentDepartamento = document.createDocumentFragment();
 
-const $localidades = document.getElementById("listaLocalidad"),
+const $listaLocalidad = document.getElementById("listaLocalidad"),
     $fragmentLocalidades = document.createDocumentFragment();
 
 
@@ -32,7 +32,7 @@ async function cargarDepartamentos() {
             $fragmentDepartamento.appendChild(option);
 
         });
-        $departamento.appendChild($fragmentDepartamento);
+        $listaDepartamentos.appendChild($fragmentDepartamento);
 
     } catch (err) {
         let message = err.statusText || "Ocurrió un error";
@@ -62,7 +62,7 @@ async function cargarLocalidades() {
             $fragmentLocalidades.appendChild(option2);
 
         });
-        $localidades.appendChild($fragmentLocalidades);
+        $listaLocalidad.appendChild($fragmentLocalidades);
 
     } catch (err) {
         let message = err.statusText || "Ocurrió un error";
@@ -75,9 +75,8 @@ async function cargarLocalidades() {
 async function cargarArtes(objectIDs) {
     let tarjetasPresentacion = "";
     let numTarjetas = 0;
-    let mezclarArreglo = objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
 
-    for (const el of mezclarArreglo) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
+    for (const el of objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
 
         //console.log(el);
         if (numTarjetas >= 20) break;
@@ -92,7 +91,7 @@ async function cargarArtes(objectIDs) {
             // if (jsonObjeto.culture.trim() !== "" && jsonObjeto.objectDate.trim() !== "") {
 
 
-            let resLocal = await fetch('http://localhost:8000/traducir', {
+            let resLocal = await fetch('http://localhost:8100/traducir', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -151,6 +150,7 @@ async function cargarArtes(objectIDs) {
 
 
 async function cargarImagenesAdicionales(objectID, tituloTraducido) {
+    $tarjetas.innerHTML = "";
     try {
 
         let resObjeto = await fetch(URL_OBJETOID + objectID);
@@ -194,8 +194,10 @@ async function artePresentacion() {
 
         if (!res.ok) throw { status: res.status, statusText: res.statusText }; //SI "res.ok" ES FALSO, ENTONCES EL "throw" RETORNA EL FLUJO AL "catch"
 
-        console.log(json.objectIDs);
-        cargarArtes(json.objectIDs);
+        let mezclarArreglo = json.objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
+
+        console.log(mezclarArreglo);
+        cargarArtes(mezclarArreglo);
 
     } catch (err) {
 
@@ -211,19 +213,19 @@ async function obtenerValor() {
     const palabraClave = document.getElementById("palabra clave");
     //console.log("Palabra Clave seleccionada:", palabraClave);
 
-    const departamentoInput = document.getElementById("departamento");
-    const opcionDepartamento = Array.from(departamentoInput.list.options).find(option => option.value === departamentoInput.value);
-    const departamento = opcionDepartamento ? `&departmentId=${opcionDepartamento.dataset.id}` : null;
+    const departamento = document.getElementById("departamento");
+    const opcionDepartamento = Array.from(departamento.list.options).find(option => option.value === departamento.value);
+    const departamentoId = opcionDepartamento ? `&departmentId=${opcionDepartamento.dataset.id}` : null;
     //console.log("ID del departamento seleccionado:", departamento);
 
     const localidad = document.getElementById("localidad").value !== "" ? `&geoLocation=${document.getElementById("localidad").value}` : "";
     //console.log("Localidad seleccionada:", localidad);
 
-    console.log(URL_BUSCAR + `q=${palabraClave.value}${departamento}${localidad}`);
+    console.log(URL_BUSCAR + `q=${palabraClave.value}${departamentoId}${localidad}`);
 
     try {
 
-        let res = await fetch(URL_BUSCAR + `q=${palabraClave.value}${departamento}${localidad}`),
+        let res = await fetch(URL_BUSCAR + `q=${palabraClave.value}${departamentoId}${localidad}`),
             json = await res.json();
         console.log(json);
         console.log(res.ok);
@@ -239,8 +241,9 @@ async function obtenerValor() {
             $tarjetas.innerHTML = `No se encontro Arte con: ${palabraClaveText}   ----   ${departamentoText}   -----   ${localidadText}`;
 
         } else {
+            let mezclarArreglo = json.objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
 
-            cargarArtes(json.objectIDs);
+            cargarArtes(mezclarArreglo);
         }
 
 
@@ -259,3 +262,60 @@ async function obtenerValor() {
 cargarDepartamentos();
 cargarLocalidades();
 artePresentacion();
+
+
+async function crearPaginas(objectIDs) {
+    let tarjetasPresentacion = "";
+    let numObjetos = 0;
+    let paginaActual = 1;
+    let objetosPorPagina = 20;
+    let paginas = [];
+
+
+    for (const el of objectIDs) { // Asegúrate de que 'mezclarArreglo' esté definido o usa 'objectIDs' directamente.
+        if (paginaActual > 5) break;
+
+        if (numObjetos >= objetosPorPagina) {
+            paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+            tarjetasPresentacion = "";
+            numObjetos = 0;
+            paginaActual++;
+        }
+
+        try {
+            let resObjeto = await fetch(URL_OBJETOID + el);
+            if (!resObjeto.ok) continue;
+
+            let jsonObjeto = await resObjeto.json();
+            tarjetasPresentacion += `<div>${jsonObjeto.title}</div>`; // Ajusta esto según tus necesidades
+            numObjetos++;
+        } catch (error) {
+            console.error("Error fetching object:", error);
+        }
+    }
+
+    // Añadir la última página si tiene objetos
+    if (numObjetos > 0) {
+        paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+    }
+
+    // Generar botones de paginación
+    generarBotonesPaginacion(paginas);
+}
+
+function generarBotonesPaginacion(paginas) {
+    const contenedorBotones = document.getElementById("contenedorBotones");
+    contenedorBotones.innerHTML = ""; // Limpiar botones anteriores
+
+    paginas.forEach(pagina => {
+        let boton = document.createElement("button");
+        boton.textContent = `Página ${pagina.pagina}`;
+        boton.onclick = () => mostrarPaginas(pagina.objetos);
+        contenedorBotones.appendChild(boton);
+    });
+}
+
+function mostrarPaginas(objetos) {
+    const contenedorObjetos = document.getElementById("contenedorObjetos");
+    contenedorObjetos.innerHTML = objetos;
+}

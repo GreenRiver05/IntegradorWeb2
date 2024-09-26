@@ -75,6 +75,7 @@ a:hover {
   color: var(--bs-white);
 }
 
+
 /* ******************* My Styles ************ (MIS VARIABLES)*/
 .bg-gradient-blue-green {
   background-color: rgba(20, 25, 45, 1);
@@ -89,10 +90,6 @@ a:hover {
   background-color: var(--second-color);
   border-radius: 30px;
 }
-
-
-
-
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
