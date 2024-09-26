@@ -72,8 +72,8 @@ async function cargarLocalidades() {
 }
 
 
-async function cargarArtes(objectIDs) {
-    $tarjetas.innerHTML = "";
+async function crearPaginas(objectIDs, parametro) {
+
     let tarjetasPresentacion = "";
     let numObjetos = 0;
     let paginaActual = 1;
@@ -82,8 +82,16 @@ async function cargarArtes(objectIDs) {
 
     for (const el of objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
 
+        if (parametro === "presentacion" && paginaActual > 1) break;
+        if (parametro === "buscador" && paginaActual > 5) break;
         //console.log(el);
-        if (numTarjetas >= 20) break;
+
+        if (numObjetos >= objetosPorPagina) {
+            paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+            tarjetasPresentacion = "";
+            numObjetos = 0;
+            paginaActual++;
+        }
 
         try {
             let resObjeto = await fetch(URL_OBJETOID + el);
@@ -91,9 +99,7 @@ async function cargarArtes(objectIDs) {
 
             let jsonObjeto = await resObjeto.json();
 
-
-            // if (jsonObjeto.culture.trim() !== "" && jsonObjeto.objectDate.trim() !== "") {
-
+            // if (jsonObjeto.culture.trim() !== "" && jsonObjeto.objectDate.trim() !== "") { SOLO TRAER OBJETOS CON CULTURAS Y FECHA 
 
             let resLocal = await fetch('http://localhost:8100/traducir', {
                 method: 'POST',
@@ -114,7 +120,7 @@ async function cargarArtes(objectIDs) {
             let datosTraducidos = await resLocal.json();
             console.log('Objeto traducido:', datosTraducidos[0].titulo);
 
-            numTarjetas++;
+           
             tarjetasPresentacion += `
                             <article class="col-12 col-md-6 col-lg-3 d-flex pt-5 ">
                                 <div class="card x-auto mb-3 h-100 ">
@@ -122,7 +128,7 @@ async function cargarArtes(objectIDs) {
                                      class="card-img-top"
                                      alt="${datosTraducidos[0].titulo}" 
                                      data-bs-toggle="tooltip"
-                                     data-bs-title="<b><u>FECHA:</u></b> ${jsonObjeto.objectDate.trim() !== "" ? datosTraducidos[0].fecha : `<span style="color: red;">${datosTraducidos[0].fecha}</span>`}
+                                     data-bs-title="<b><u>FECHA:</u></b> ${jsonObjeto.objectDate.trim() !== "" ? datosTraducidos[0].fecha : `<span style="color: red;">${datosTraducidos[0].fecha}</span>`}"
                                      data-bs-custom-class="custom-tooltip"
                                      data-bs-html="true"/>
                                     <div class="card-body">
@@ -143,11 +149,7 @@ async function cargarArtes(objectIDs) {
                                         </div>
                                 </div>
                             </article>`;
-
-
-
-
-            //   }
+            numObjetos++;
 
         } catch (err) {
             console.error(`Error al procesar el ID ${el}: ${err.status || 'N/A'} - ${err.statusText || 'N/A'} `);
@@ -155,14 +157,40 @@ async function cargarArtes(objectIDs) {
         }
     };
 
-    $tarjetas.innerHTML = tarjetasPresentacion;
+    if (numObjetos > 0) {
+        paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
+    }
+    console.log("TERMINE LA PAGINACION")
+    console.log(paginas)
+    generarBotonesPaginacion(paginas);
+    
+}
+
+
+function generarBotonesPaginacion(paginas) {
+    console.log("GENERANDO BOTONES")
+    const contenedorBotones = document.getElementById("contenedorBotones");
+   
+
+    paginas.forEach(pagina => {
+        let boton = document.createElement("button");
+        boton.textContent = `Página ${pagina.pagina}`;
+        boton.onclick = () => mostrarPaginas(pagina.tarjetas);
+        contenedorBotones.appendChild(boton);
+        console.log("GENERANDO BOTON: "+pagina.pagina)
+    });
+}
+
+
+function mostrarPaginas(tarjetas) {
+    $tarjetas.innerHTML = "";
+    $tarjetas.innerHTML = tarjetas;
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
         var tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
             customClass: 'custom-tooltip'
         });
     });
-    
 
 }
 
@@ -215,7 +243,7 @@ async function artePresentacion() {
         let mezclarArreglo = json.objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
 
         console.log(mezclarArreglo);
-        cargarArtes(mezclarArreglo);
+        crearPaginas(mezclarArreglo, "presentacion");
 
     } catch (err) {
 
@@ -227,7 +255,8 @@ async function artePresentacion() {
 
 
 async function obtenerValor() {
-
+    $tarjetas.innerHTML = "";
+    contenedorBotones.innerHTML = "";
     const palabraClave = document.getElementById("palabra clave");
     //console.log("Palabra Clave seleccionada:", palabraClave);
 
@@ -261,7 +290,7 @@ async function obtenerValor() {
         } else {
             let mezclarArreglo = json.objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
 
-            cargarArtes(mezclarArreglo);
+            crearPaginas(mezclarArreglo);
         }
 
 
@@ -282,57 +311,57 @@ cargarLocalidades();
 artePresentacion();
 
 
-async function crearPaginas(objectIDs) {
-    let tarjetasPresentacion = "";
-    let numObjetos = 0;
-    let paginaActual = 1;
-    let objetosPorPagina = 20;
-    let paginas = [];
+// async function crearPaginas(objectIDs) {
+//     let tarjetasPresentacion = "";
+//     let numObjetos = 0;
+//     let paginaActual = 1;
+//     let objetosPorPagina = 20;
+//     let paginas = [];
 
-    for (const el of objectIDs) { // Asegúrate de que 'mezclarArreglo' esté definido o usa 'objectIDs' directamente.
-        if (paginaActual > 5) break;
+//     for (const el of objectIDs) { // Asegúrate de que 'mezclarArreglo' esté definido o usa 'objectIDs' directamente.
+//         if (paginaActual > 5) break;
 
-        if (numObjetos >= objetosPorPagina) {
-            paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
-            tarjetasPresentacion = "";
-            numObjetos = 0;
-            paginaActual++;
-        }
+//         if (numObjetos >= objetosPorPagina) {
+//             paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+//             tarjetasPresentacion = "";
+//             numObjetos = 0;
+//             paginaActual++;
+//         }
 
-        try {
-            let resObjeto = await fetch(URL_OBJETOID + el);
-            if (!resObjeto.ok) continue;
+//         try {
+//             let resObjeto = await fetch(URL_OBJETOID + el);
+//             if (!resObjeto.ok) continue;
 
-            let jsonObjeto = await resObjeto.json();
-            tarjetasPresentacion += `<div>${jsonObjeto.title}</div>`; // Ajusta esto según tus necesidades
-            numObjetos++;
-        } catch (error) {
-            console.error("Error fetching object:", error);
-        }
-    }
+//             let jsonObjeto = await resObjeto.json();
+//             tarjetasPresentacion += `<div>${jsonObjeto.title}</div>`; // Ajusta esto según tus necesidades
+//             numObjetos++;
+//         } catch (error) {
+//             console.error("Error fetching object:", error);
+//         }
+//     }
 
-    // Añadir la última página si tiene objetos
-    if (numObjetos > 0) {
-        paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
-    }
+//     // Añadir la última página si tiene objetos
+//     if (numObjetos > 0) {
+//         paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+//     }
 
-    // Generar botones de paginación
-    generarBotonesPaginacion(paginas);
-}
+//     // Generar botones de paginación
+//     generarBotonesPaginacion(paginas);
+// }
 
-function generarBotonesPaginacion(paginas) {
-    const contenedorBotones = document.getElementById("contenedorBotones");
-    contenedorBotones.innerHTML = ""; // Limpiar botones anteriores
+// function generarBotonesPaginacion(paginas) {
+//     const contenedorBotones = document.getElementById("contenedorBotones");
+//     contenedorBotones.innerHTML = ""; // Limpiar botones anteriores
 
-    paginas.forEach(pagina => {
-        let boton = document.createElement("button");
-        boton.textContent = `Página ${pagina.pagina}`;
-        boton.onclick = () => mostrarPaginas(pagina.objetos);
-        contenedorBotones.appendChild(boton);
-    });
-}
+//     paginas.forEach(pagina => {
+//         let boton = document.createElement("button");
+//         boton.textContent = `Página ${pagina.pagina}`;
+//         boton.onclick = () => mostrarPaginas(pagina.objetos);
+//         contenedorBotones.appendChild(boton);
+//     });
+// }
 
-function mostrarPaginas(objetos) {
-    const contenedorObjetos = document.getElementById("contenedorObjetos");
-    contenedorObjetos.innerHTML = objetos;
-}
+// function mostrarPaginas(objetos) {
+//     const contenedorObjetos = document.getElementById("contenedorObjetos");
+//     contenedorObjetos.innerHTML = objetos;
+// }
