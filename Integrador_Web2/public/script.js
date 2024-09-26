@@ -38,14 +38,7 @@ async function cargarDepartamentos() {
         let message = err.statusText || "Ocurrió un error";
         $buscador.innerHTML = `Error ${err.status}: ${message} || ERROR EN DEPARTAMENTOS`;
     }
-    // $departamento.addEventListener('input', (event) => {
-    //     const selectedOption = Array.from($listaDepartamentos.options).find(option => option.value === event.target.value);
-    //     if (selectedOption) {
-    //         console.log('ID del departamento seleccionado:', selectedOption.dataset.id);
-    //         // Aquí puedes guardar el ID en una variable o enviarlo a tu servidor
-    //     }
-    // });
-}
+  }
 
 
 async function cargarLocalidades() {
@@ -87,7 +80,7 @@ async function crearPaginas(objectIDs, parametro) {
         //console.log(el);
 
         if (numObjetos >= objetosPorPagina) {
-            paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
+            paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
             tarjetasPresentacion = "";
             numObjetos = 0;
             paginaActual++;
@@ -120,7 +113,7 @@ async function crearPaginas(objectIDs, parametro) {
             let datosTraducidos = await resLocal.json();
             console.log('Objeto traducido:', datosTraducidos[0].titulo);
 
-           
+
             tarjetasPresentacion += `
                             <article class="col-12 col-md-6 col-lg-3 d-flex pt-5 ">
                                 <div class="card x-auto mb-3 h-100 ">
@@ -160,24 +153,32 @@ async function crearPaginas(objectIDs, parametro) {
     if (numObjetos > 0) {
         paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
     }
-    console.log("TERMINE LA PAGINACION")
-    console.log(paginas)
+    //console.log("TERMINE LA PAGINACION")
+    // console.log(paginas[0]);
+    // console.log(paginas[1]);
     generarBotonesPaginacion(paginas);
-    
+    $tarjetas.innerHTML = paginas[0].tarjetas;
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        var tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
+            customClass: 'custom-tooltip'
+        });
+    });
 }
 
 
 function generarBotonesPaginacion(paginas) {
-    console.log("GENERANDO BOTONES")
+    //console.log("GENERANDO BOTONES")
     const contenedorBotones = document.getElementById("contenedorBotones");
-   
 
-    paginas.forEach(pagina => {
+
+    paginas.forEach(el => {
         let boton = document.createElement("button");
-        boton.textContent = `Página ${pagina.pagina}`;
-        boton.onclick = () => mostrarPaginas(pagina.tarjetas);
+        boton.textContent = `Página ${el.pagina}`;
+        boton.onclick = () => mostrarPaginas(el.tarjetas);
         contenedorBotones.appendChild(boton);
-        console.log("GENERANDO BOTON: "+pagina.pagina)
+        // console.log("GENERANDO BOTON: "+el.pagina);
+        //console.log("INFO: "+el.tarjetas); 
     });
 }
 
@@ -257,7 +258,9 @@ async function artePresentacion() {
 async function obtenerValor() {
     $tarjetas.innerHTML = "";
     contenedorBotones.innerHTML = "";
-    const palabraClave = document.getElementById("palabra clave");
+
+    const palabraClave = document.getElementById("palabra clave").value.trim();
+    const stringClave = palabraClave === "" ? `q=*` : `q=${encodeURIComponent("palabra clave")}`;
     //console.log("Palabra Clave seleccionada:", palabraClave);
 
     const departamento = document.getElementById("departamento");
@@ -268,11 +271,11 @@ async function obtenerValor() {
     const localidad = document.getElementById("localidad").value !== "" ? `&geoLocation=${document.getElementById("localidad").value}` : "";
     //console.log("Localidad seleccionada:", localidad);
 
-    console.log(URL_BUSCAR + `q=${palabraClave.value}${departamentoId}${localidad}`);
+    console.log(URL_BUSCAR + stringClave + departamentoId + localidad);
 
     try {
 
-        let res = await fetch(URL_BUSCAR + `q=${palabraClave.value}${departamentoId}${localidad}`),
+        let res = await fetch(URL_BUSCAR + stringClave + departamentoId + localidad),
             json = await res.json();
         console.log(json);
         console.log(res.ok);
@@ -311,57 +314,3 @@ cargarLocalidades();
 artePresentacion();
 
 
-// async function crearPaginas(objectIDs) {
-//     let tarjetasPresentacion = "";
-//     let numObjetos = 0;
-//     let paginaActual = 1;
-//     let objetosPorPagina = 20;
-//     let paginas = [];
-
-//     for (const el of objectIDs) { // Asegúrate de que 'mezclarArreglo' esté definido o usa 'objectIDs' directamente.
-//         if (paginaActual > 5) break;
-
-//         if (numObjetos >= objetosPorPagina) {
-//             paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
-//             tarjetasPresentacion = "";
-//             numObjetos = 0;
-//             paginaActual++;
-//         }
-
-//         try {
-//             let resObjeto = await fetch(URL_OBJETOID + el);
-//             if (!resObjeto.ok) continue;
-
-//             let jsonObjeto = await resObjeto.json();
-//             tarjetasPresentacion += `<div>${jsonObjeto.title}</div>`; // Ajusta esto según tus necesidades
-//             numObjetos++;
-//         } catch (error) {
-//             console.error("Error fetching object:", error);
-//         }
-//     }
-
-//     // Añadir la última página si tiene objetos
-//     if (numObjetos > 0) {
-//         paginas.push({ pagina: paginaActual, objetos: tarjetasPresentacion });
-//     }
-
-//     // Generar botones de paginación
-//     generarBotonesPaginacion(paginas);
-// }
-
-// function generarBotonesPaginacion(paginas) {
-//     const contenedorBotones = document.getElementById("contenedorBotones");
-//     contenedorBotones.innerHTML = ""; // Limpiar botones anteriores
-
-//     paginas.forEach(pagina => {
-//         let boton = document.createElement("button");
-//         boton.textContent = `Página ${pagina.pagina}`;
-//         boton.onclick = () => mostrarPaginas(pagina.objetos);
-//         contenedorBotones.appendChild(boton);
-//     });
-// }
-
-// function mostrarPaginas(objetos) {
-//     const contenedorObjetos = document.getElementById("contenedorObjetos");
-//     contenedorObjetos.innerHTML = objetos;
-// }
