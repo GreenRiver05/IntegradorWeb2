@@ -73,8 +73,12 @@ async function cargarLocalidades() {
 
 
 async function cargarArtes(objectIDs) {
+    $tarjetas.innerHTML = "";
     let tarjetasPresentacion = "";
-    let numTarjetas = 0;
+    let numObjetos = 0;
+    let paginaActual = 1;
+    let objetosPorPagina = 20;
+    let paginas = [];
 
     for (const el of objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
 
@@ -114,7 +118,13 @@ async function cargarArtes(objectIDs) {
             tarjetasPresentacion += `
                             <article class="col-12 col-md-6 col-lg-3 d-flex pt-5 ">
                                 <div class="card x-auto mb-3 h-100 ">
-                                    <img src="${jsonObjeto.primaryImageSmall !== "" ? jsonObjeto.primaryImageSmall : '/img/noImagen.jpeg'}" class="card-img-top" alt="${datosTraducidos[0].titulo}" />
+                                    <img src="${jsonObjeto.primaryImageSmall !== "" ? jsonObjeto.primaryImageSmall : '/img/noImagen.jpeg'}"
+                                     class="card-img-top"
+                                     alt="${datosTraducidos[0].titulo}" 
+                                     data-bs-toggle="tooltip"
+                                     data-bs-title="<b><u>FECHA:</u></b> ${jsonObjeto.objectDate.trim() !== "" ? datosTraducidos[0].fecha : `<span style="color: red;">${datosTraducidos[0].fecha}</span>`}
+                                     data-bs-custom-class="custom-tooltip"
+                                     data-bs-html="true"/>
                                     <div class="card-body">
                                         <h5 class="card-title text-center">${jsonObjeto.title.trim() !== "" ? datosTraducidos[0].titulo : `<span style="color: red;">${datosTraducidos[0].titulo}</span>`}</h5>
                                         <p class="card-text pt-5">
@@ -126,10 +136,11 @@ async function cargarArtes(objectIDs) {
                                         <p class="card-text">
                                            <b>Dinastía:</b>  ${jsonObjeto.dynasty.trim() !== "" ? datosTraducidos[0].dinastia : `<span style="color: red;">${datosTraducidos[0].dinastia}</span>`}
                                         </p>
+                                         ${jsonObjeto.additionalImages && jsonObjeto.additionalImages.length > 0 ? `
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagenesModal" onclick="cargarImagenesAdicionales(${el},'${datosTraducidos[0].titulo}')">
                                         Fotos Adicionales
-                                        </button>
-                                    </div>
+                                        </button>` : ''}
+                                        </div>
                                 </div>
                             </article>`;
 
@@ -145,12 +156,19 @@ async function cargarArtes(objectIDs) {
     };
 
     $tarjetas.innerHTML = tarjetasPresentacion;
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        var tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
+            customClass: 'custom-tooltip'
+        });
+    });
+    
 
 }
 
 
 async function cargarImagenesAdicionales(objectID, tituloTraducido) {
-    $tarjetas.innerHTML = "";
+
     try {
 
         let resObjeto = await fetch(URL_OBJETOID + objectID);
@@ -270,7 +288,6 @@ async function crearPaginas(objectIDs) {
     let paginaActual = 1;
     let objetosPorPagina = 20;
     let paginas = [];
-
 
     for (const el of objectIDs) { // Asegúrate de que 'mezclarArreglo' esté definido o usa 'objectIDs' directamente.
         if (paginaActual > 5) break;

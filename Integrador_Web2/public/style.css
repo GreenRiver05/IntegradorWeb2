@@ -34,6 +34,7 @@ a:hover {
   background-color: var(--second-color) !important;
 }
 
+
 .custom-tooltip {
   --bs-tooltip-bg: var(--link-alpha-color);
   --bs-tooltip-color: var(--bs-white);
@@ -75,6 +76,9 @@ a:hover {
   color: var(--bs-white);
 }
 
+.tooltip{
+  --bs-tooltip-max-width: 400px;
+}
 
 /* ******************* My Styles ************ (MIS VARIABLES)*/
 .bg-gradient-blue-green {
