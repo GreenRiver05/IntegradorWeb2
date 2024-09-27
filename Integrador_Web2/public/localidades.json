@@ -1,402 +1,4002 @@
 {
-  "0": "Philadelphia",
-  "1": "Bristol",
-  "2": "New York",
-  "3": "Lebanon",
-  "4": "Norwich",
-  "5": "East Cambridge",
-  "6": "Somerville",
-  "7": "Boston",
-  "8": "Delft",
-  "9": "Meriden",
-  "10": "Rye",
-  "11": "Oyster Bay",
-  "12": "New Lebanon",
-  "13": "London",
-  "14": "Charlestown",
-  "15": "Portsmouth",
-  "16": "Lititz",
-  "17": "Chicago",
-  "18": "Wakefield",
-  "19": "Portland",
-  "20": "Salem",
-  "21": "Newark",
-  "22": "Paris",
-  "23": "Bennington",
-  "24": "Hartford",
-  "25": "Petersburg",
-  "26": "Alexandria",
-  "27": "Concord",
-  "28": "Sandwich",
-  "29": "Pittsburgh",
-  "30": "Strasburg",
-  "31": "Middletown",
-  "32": "Baltimore",
-  "33": "Providence",
-  "34": "Preston",
-  "35": "Charleston",
-  "36": "Albany",
-  "37": "Cincinnati",
-  "38": "Worcester",
-  "39": "Newburyport",
-  "40": "Barnstable",
-  "41": "Beverly",
-  "42": "Hancock",
-  "43": "Brooklyn",
-  "44": "Trenton",
-  "45": "Troy",
-  "46": "New London",
-  "47": "Berlin",
-  "48": "Waynesboro",
-  "49": "St. Louis",
-  "50": "Corning",
-  "51": "Wheeling",
-  "52": "Cambridge",
-  "53": "Amsterdam",
-  "54": "Colchester",
-  "55": "Enfield",
-  "56": "Tarentum",
-  "57": "Chelsea",
-  "58": "Zanesville",
-  "59": "New Geneva",
-  "60": "Alloway",
-  "61": "Wistarburg",
-  "62": "Liverpool",
-  "63": "Canton",
-  "64": "Mantua",
-  "65": "Goshen",
-  "66": "Findlay",
-  "67": "East Liverpool",
-  "68": "Gardner",
-  "69": "White Mills",
-  "70": "Deerfield",
-  "71": "Denver",
-  "72": "Windsor",
-  "73": "Medfield",
-  "74": "Washington DC",
-  "75": "Stoke-on-Trent",
-  "76": "Newport",
-  "77": "Waterbury",
-  "78": "Thetford",
-  "79": "Sheffield",
-  "80": "New Bedford",
-  "81": "Westbrook",
-  "82": "Birmingham",
-  "83": "Leeds",
-  "84": "Princeton",
-  "85": "Bedford",
-  "86": "Bolton",
-  "87": "South Kingstown",
-  "88": "Marblehead",
-  "89": "Saybrook",
-  "90": "Plymouth",
-  "91": "Toledo",
-  "92": "Berkshire",
-  "93": "Dorchester",
-  "94": "Cleveland",
-  "95": "Buffalo",
-  "96": "Watervliet",
-  "97": "Goffstown",
-  "98": "Hitchcocksville",
-  "99": "Framingham",
-  "100": "Kingston or vicinity",
-  "101": "Tokyo",
-  "102": "Wallingford",
-  "103": "New Orleans",
-  "104": "Waterford",
-  "105": "Newcastle",
-  "106": "Annapolis",
-  "107": "Greensburg",
-  "108": "Puebla",
-  "109": "Puedbla",
-  "110": "Saratoga",
-  "111": "Haddonfield",
-  "112": "Santa Barbara",
-  "113": "Braintree",
-  "114": "Edgefield District",
-  "115": "Dorset",
-  "116": "Guilford",
-  "117": "Milford",
-  "118": "Keene",
-  "119": "Jersey City",
-  "120": "Malden",
-  "121": "Eastwood",
-  "122": "Limoges",
-  "123": "Nuremberg",
-  "124": "Durham",
-  "125": "Grand Rapids",
-  "126": "Westfield",
-  "127": "Frankford",
-  "128": "Richmond",
-  "129": "Manheim",
-  "130": "Roxbury",
-  "131": "New Hackensack",
-  "132": "Savannah",
-  "133": "Aurora",
-  "134": "North Attleboro",
-  "135": "Bridgetown",
-  "136": "Coventry",
-  "137": "Kensington",
-  "138": "Louisville",
-  "139": "Lancaster",
-  "140": "Wellsburg",
-  "141": "Vernon",
-  "142": "Westford",
-  "143": "Huntsville",
-  "144": "Mohawk Valley",
-  "145": "Norwalk",
-  "146": "Dresden",
-  "147": "Marshfield",
-  "148": "Hingham",
-  "149": "Pasadena",
-  "150": "Ipswich",
-  "151": "New Haven",
-  "152": "Belchertown",
-  "153": "Syracuse",
-  "154": "Taunton",
-  "155": "Los Angeles",
-  "156": "Redwood",
-  "157": "Southampton",
-  "158": "New Bremen",
-  "159": "Binghamton",
-  "160": "High Falls",
-  "161": "Griggstown",
-  "162": "Millville",
-  "163": "Reading",
-  "164": "Springfield",
-  "165": "San Francisco",
-  "166": "Elizabeth",
-  "167": "Harrisburg",
-  "168": "Riverside",
-  "169": "Haverhill",
-  "170": "York",
-  "171": "Terryville",
-  "172": "Carlisle",
-  "173": "Sèvres",
-  "174": "Walpole",
-  "175": "Lockport",
-  "176": "East Aurora",
-  "177": "Newbury",
-  "178": "Marseille",
-  "179": "Balmville",
-  "180": "Stepney",
-  "181": "Guanajuato",
-  "182": "Curling",
-  "183": "Greenfield",
-  "184": "Huntington",
-  "185": "South Amboy",
-  "186": "South Natick",
-  "187": "Allowaystown",
-  "188": "Sunderland",
-  "189": "Gloucester",
-  "190": "Biloxi",
-  "191": "Kaolin",
-  "192": "Wrightstown",
-  "193": "Derby",
-  "194": "Montreal",
-  "195": "Winchester",
-  "196": "East Hampton",
-  "197": "Clifton",
-  "198": "Vineland",
-  "199": "Flemington",
-  "200": "Revere",
-  "201": "Honesdale",
-  "202": "Detroit",
-  "203": "Bedford Village",
-  "204": "Poughkeepsie",
-  "205": "Kingston",
-  "206": "Westtown",
-  "207": "Wilmington",
-  "208": "Hoboken",
-  "209": "New Brooklyn",
-  "210": "Redding",
-  "211": "Kittery",
-  "212": "Woodbury",
-  "213": "Pittsfield",
-  "214": "Madison",
-  "215": "Rochester",
-  "216": "Nashville",
-  "217": "Minneapolis",
-  "218": "Wethersfeild",
-  "219": "Thurmont",
-  "220": "Cranston",
-  "221": "New Castle",
-  "222": "Germantown",
-  "223": "Brookfield",
-  "224": "Hopkinton",
-  "225": "New Brunswick",
-  "226": "Utica",
-  "227": "Grafton",
-  "228": "Kankekee",
-  "229": "Allentown",
-  "230": "Yalesville",
-  "231": "Fairfield",
-  "232": "Burlington",
-  "233": "Coldenham",
-  "234": "Leipzig",
-  "235": "Park Ridge",
-  "236": "Ridgefield",
-  "237": "Woodstock",
-  "238": "Mount Lebanon",
-  "239": "Champlain",
-  "240": "Castleton",
-  "241": "Bowdoinham",
-  "242": "Decatur",
-  "243": "Washington Hollow",
-  "244": "Mérida",
-  "245": "Wethersfield",
-  "246": "Stonington",
-  "247": "Sag Harbor",
-  "248": "Manchester",
-  "249": "Millstone",
-  "250": "Lancaster City",
-  "251": "Fall River",
-  "252": "Glen Head",
-  "253": "Hardinsburg",
-  "254": "Rhinebeck",
-  "255": "Russelville, (\"The Knob\")",
-  "256": "North's Landing",
-  "257": "Perth Amboy",
-  "258": "Forestburgh",
-  "259": "Monticello",
-  "260": "Derry Township",
-  "261": "Dixfield",
-  "262": "Lacon",
-  "263": "Shirvan",
-  "264": "Kuba or vicinity",
-  "265": "Feragham",
-  "266": "Bakshis",
-  "267": "Saraband",
-  "268": "Jushagan",
-  "269": "West Pittsfield",
-  "270": "Donegal",
-  "271": "Pawtucket",
-  "272": "South Manchester",
-  "273": "East Lampeter Township",
-  "274": "Franklin",
-  "275": "Pepperell",
-  "276": "Hanover",
-  "277": "Claremont",
-  "278": "Norfolk",
-  "279": "Moorestown",
-  "280": "Attleborough",
-  "281": "Halfmoon",
-  "282": "Danvers",
-  "283": "Brunswick",
-  "284": "Andover",
-  "285": "Cornish",
-  "286": "Nelson",
-  "287": "East Hempfield",
-  "288": "Lowell",
-  "289": "Sterling",
-  "290": "Stockbridge",
-  "291": "New Hartford",
-  "292": "Freehold",
-  "293": "Fayetteville",
-  "294": "Millersburg",
-  "295": "Delhi",
-  "296": "Southport",
-  "297": "Lewistown",
-  "298": "Lawrence",
-  "299": "Doylestown",
-  "300": "Ahmedabad",
-  "301": "Monmouth",
-  "302": "Pocasset",
-  "303": "Litchfield",
-  "304": "Newburgh",
-  "305": "Johnstown",
-  "306": "New Rochelle",
-  "307": "East Haven",
-  "308": "Attleboro",
-  "309": "Rose Valley",
-  "310": "Phoenixville",
-  "311": "Elizabeth Furnace",
-  "312": "Colorado Springs",
-  "313": "Arthur",
-  "314": "Kalona",
-  "315": "Somers",
-  "316": "Ashburnham",
-  "317": "Campton",
-  "318": "Montogmery",
-  "319": "Washington, DC",
-  "320": "Center Lovell",
-  "321": "Carmel",
-  "322": "Milwaukee",
-  "323": "Marlotte",
-  "324": "Tarrytown",
-  "325": "Dedham",
-  "326": "Westhampton",
-  "327": "Tiltonsville",
-  "328": "University City",
-  "329": "Fairfax",
-  "330": "Metuchen",
-  "331": "Terra Cotta",
-  "332": "Corona",
-  "333": "West Sterling",
-  "334": "Hot Springs",
-  "335": "Brighton",
-  "336": "Alfred",
-  "337": "possibly Istanbul",
-  "338": "Augsburg",
-  "339": "Milan",
-  "340": "Innsbruck",
-  "341": "Augsburg and Landshut",
-  "342": "Venice",
-  "343": "Naples",
-  "344": "Wada",
-  "345": "Zürich",
-  "346": "Greenwich",
-  "347": "probably Augsburg",
-  "348": "Milan and Brescia",
-  "349": "Brescia",
-  "350": "Landshut",
-  "351": "Landshut and Augsburg (?)",
-  "352": "possibly Brescia",
-  "353": "possibly Brunswick-Wölfenbüttel",
-  "354": "probably Innsbruck",
-  "355": "probably Milan",
-  "356": "possibly Bologna",
-  "357": "possibly Augsburg",
-  "358": "Saxony",
-  "359": "probably Paris",
-  "360": "Eibar",
-  "361": "Osaka",
-  "362": "Upper Providence",
-  "363": "Dover",
-  "364": "Echizin",
-  "365": "Hagi",
-  "366": "Mito",
-  "367": "Erlangen",
-  "368": "Solingen",
-  "369": "probably Stuttgart",
-  "370": "probably Naples",
-  "371": "Hall",
-  "372": "Munich",
-  "373": "Cieszyn",
-  "374": "Munich and Augsburg",
-  "375": "Suhl",
-  "376": "possibly Antwerp",
-  "377": "Bethlehem",
-  "378": "Appledore",
-  "379": "the Bronx",
-  "380": "Rhode Island",
-  "381": "Hatfield",
-  "382": "Greenpoint, Brooklyn",
-  "383": "New York City",
-  "384": "Fort Laramie",
-  "385": "Oakland",
-  "386": "Pleasant Valley",
-  "387": "Kyoto",
-  "388": "Milan or Brescia",
-  "389": "Bargi",
-  "390": "Versailles",
-  "391": "Rocky River",
-  "392": "Cranbrook",
-  "393": "Warren",
-  "394": "Minerva",
-  "395": "Cambridge City",
-  "396": "Pleasant Hill",
-  "397": "Menlo Park",
-  "398": "Madrid",
-  "399": "Schwäbisch Gmünd"
+  "0": {
+    "objectID": 33,
+    "city": "Philadelphia"
+  },
+  "1": {
+    "objectID": 34,
+    "city": "Bristol"
+  },
+  "2": {
+    "objectID": 35,
+    "city": "New York"
+  },
+  "3": {
+    "objectID": 36,
+    "city": "Lebanon"
+  },
+  "4": {
+    "objectID": 39,
+    "city": "Norwich"
+  },
+  "5": {
+    "objectID": 40,
+    "city": "East Cambridge"
+  },
+  "6": {
+    "objectID": 41,
+    "city": "Somerville"
+  },
+  "7": {
+    "objectID": 110,
+    "city": "Boston"
+  },
+  "8": {
+    "objectID": 124,
+    "city": "Delft"
+  },
+  "9": {
+    "objectID": 131,
+    "city": "Meriden"
+  },
+  "10": {
+    "objectID": 132,
+    "city": "Rye"
+  },
+  "11": {
+    "objectID": 133,
+    "city": "Oyster Bay"
+  },
+  "12": {
+    "objectID": 134,
+    "city": "New Lebanon"
+  },
+  "13": {
+    "objectID": 139,
+    "city": "London"
+  },
+  "14": {
+    "objectID": 200,
+    "city": "Charlestown"
+  },
+  "15": {
+    "objectID": 203,
+    "city": "Portsmouth"
+  },
+  "16": {
+    "objectID": 213,
+    "city": "Lititz"
+  },
+  "17": {
+    "objectID": 219,
+    "city": "Chicago"
+  },
+  "18": {
+    "objectID": 222,
+    "city": "Wakefield"
+  },
+  "19": {
+    "objectID": 223,
+    "city": "Portland"
+  },
+  "20": {
+    "objectID": 230,
+    "city": "Salem"
+  },
+  "21": {
+    "objectID": 246,
+    "city": "Newark"
+  },
+  "22": {
+    "objectID": 265,
+    "city": "Paris"
+  },
+  "23": {
+    "objectID": 284,
+    "city": "Bennington"
+  },
+  "24": {
+    "objectID": 285,
+    "city": "Hartford"
+  },
+  "25": {
+    "objectID": 300,
+    "city": "Petersburg"
+  },
+  "26": {
+    "objectID": 304,
+    "city": "Alexandria"
+  },
+  "27": {
+    "objectID": 315,
+    "city": "Concord"
+  },
+  "28": {
+    "objectID": 318,
+    "city": "Sandwich"
+  },
+  "29": {
+    "objectID": 326,
+    "city": "Pittsburgh"
+  },
+  "30": {
+    "objectID": 332,
+    "city": "Strasburg"
+  },
+  "31": {
+    "objectID": 336,
+    "city": "Middletown"
+  },
+  "32": {
+    "objectID": 340,
+    "city": "Baltimore"
+  },
+  "33": {
+    "objectID": 341,
+    "city": "Providence"
+  },
+  "34": {
+    "objectID": 367,
+    "city": "Preston"
+  },
+  "35": {
+    "objectID": 395,
+    "city": "Charleston"
+  },
+  "36": {
+    "objectID": 400,
+    "city": "Albany"
+  },
+  "37": {
+    "objectID": 401,
+    "city": "Cincinnati"
+  },
+  "38": {
+    "objectID": 402,
+    "city": "Worcester"
+  },
+  "39": {
+    "objectID": 404,
+    "city": "Newburyport"
+  },
+  "40": {
+    "objectID": 407,
+    "city": "Barnstable"
+  },
+  "41": {
+    "objectID": 409,
+    "city": "Beverly"
+  },
+  "42": {
+    "objectID": 458,
+    "city": "Hancock"
+  },
+  "43": {
+    "objectID": 463,
+    "city": "Brooklyn"
+  },
+  "44": {
+    "objectID": 476,
+    "city": "Trenton"
+  },
+  "45": {
+    "objectID": 504,
+    "city": "Troy"
+  },
+  "46": {
+    "objectID": 2846,
+    "city": "Berlin"
+  },
+  "47": {
+    "objectID": 2856,
+    "city": "Chelsea"
+  },
+  "48": {
+    "objectID": 513,
+    "city": "Cambridge"
+  },
+  "49": {
+    "objectID": 516,
+    "city": "Amsterdam"
+  },
+  "50": {
+    "objectID": 544,
+    "city": "Colchester"
+  },
+  "51": {
+    "objectID": 551,
+    "city": "Enfield"
+  },
+  "52": {
+    "objectID": 564,
+    "city": "Tarentum"
+  },
+  "53": {
+    "objectID": 601,
+    "city": "Zanesville"
+  },
+  "54": {
+    "objectID": 608,
+    "city": "New Geneva"
+  },
+  "55": {
+    "objectID": 632,
+    "city": "Alloway"
+  },
+  "56": {
+    "objectID": 648,
+    "city": "Wistarburg"
+  },
+  "57": {
+    "objectID": 660,
+    "city": "Liverpool"
+  },
+  "58": {
+    "objectID": 664,
+    "city": "Canton"
+  },
+  "59": {
+    "objectID": 677,
+    "city": "Mantua"
+  },
+  "60": {
+    "objectID": 681,
+    "city": "Goshen"
+  },
+  "61": {
+    "objectID": 793,
+    "city": "Findlay"
+  },
+  "62": {
+    "objectID": 797,
+    "city": "Corning"
+  },
+  "63": {
+    "objectID": 798,
+    "city": "Wheeling"
+  },
+  "64": {
+    "objectID": 804,
+    "city": "East Liverpool"
+  },
+  "65": {
+    "objectID": 821,
+    "city": "Gardner"
+  },
+  "66": {
+    "objectID": 892,
+    "city": "White Mills"
+  },
+  "67": {
+    "objectID": 921,
+    "city": "Deerfield"
+  },
+  "68": {
+    "objectID": 938,
+    "city": "Denver"
+  },
+  "69": {
+    "objectID": 940,
+    "city": "Windsor"
+  },
+  "70": {
+    "objectID": 945,
+    "city": "Medfield"
+  },
+  "71": {
+    "objectID": 3317,
+    "city": "Stoke-on-Trent"
+  },
+  "72": {
+    "objectID": 3320,
+    "city": "Leeds"
+  },
+  "73": {
+    "objectID": 3383,
+    "city": "Westfield"
+  },
+  "74": {
+    "objectID": 3384,
+    "city": "Frankford"
+  },
+  "75": {
+    "objectID": 953,
+    "city": "Washington DC"
+  },
+  "76": {
+    "objectID": 1047,
+    "city": "Newport"
+  },
+  "77": {
+    "objectID": 1066,
+    "city": "Waterbury"
+  },
+  "78": {
+    "objectID": 1079,
+    "city": "Thetford"
+  },
+  "79": {
+    "objectID": 1279,
+    "city": "Sheffield"
+  },
+  "80": {
+    "objectID": 1301,
+    "city": "New Bedford"
+  },
+  "81": {
+    "objectID": 1311,
+    "city": "Westbrook"
+  },
+  "82": {
+    "objectID": 1354,
+    "city": "Birmingham"
+  },
+  "83": {
+    "objectID": 3835,
+    "city": "New Orleans"
+  },
+  "84": {
+    "objectID": 1455,
+    "city": "Princeton"
+  },
+  "85": {
+    "objectID": 1457,
+    "city": "Bedford"
+  },
+  "86": {
+    "objectID": 1459,
+    "city": "Bolton"
+  },
+  "87": {
+    "objectID": 1467,
+    "city": "South Kingstown"
+  },
+  "88": {
+    "objectID": 1470,
+    "city": "Marblehead"
+  },
+  "89": {
+    "objectID": 1543,
+    "city": "Saybrook"
+  },
+  "90": {
+    "objectID": 1552,
+    "city": "Plymouth"
+  },
+  "91": {
+    "objectID": 1646,
+    "city": "Toledo"
+  },
+  "92": {
+    "objectID": 1647,
+    "city": "Berkshire"
+  },
+  "93": {
+    "objectID": 1664,
+    "city": "Dorchester"
+  },
+  "94": {
+    "objectID": 1695,
+    "city": "Cleveland"
+  },
+  "95": {
+    "objectID": 1699,
+    "city": "Buffalo"
+  },
+  "96": {
+    "objectID": 1741,
+    "city": "Watervliet"
+  },
+  "97": {
+    "objectID": 1765,
+    "city": "Goffstown"
+  },
+  "98": {
+    "objectID": 1769,
+    "city": "Hitchcocksville"
+  },
+  "99": {
+    "objectID": 1779,
+    "city": "Framingham"
+  },
+  "100": {
+    "objectID": 1792,
+    "city": "Kingston or vicinity"
+  },
+  "101": {
+    "objectID": 1793,
+    "city": "Tokyo"
+  },
+  "102": {
+    "objectID": 1826,
+    "city": "Wallingford"
+  },
+  "103": {
+    "objectID": 4470,
+    "city": "Puebla"
+  },
+  "104": {
+    "objectID": 4471,
+    "city": "Puedbla"
+  },
+  "105": {
+    "objectID": 4496,
+    "city": "Saratoga"
+  },
+  "106": {
+    "objectID": 4529,
+    "city": "Haddonfield"
+  },
+  "107": {
+    "objectID": 1922,
+    "city": "Marshfield"
+  },
+  "108": {
+    "objectID": 1925,
+    "city": "Lancaster"
+  },
+  "109": {
+    "objectID": 1929,
+    "city": "Hingham"
+  },
+  "110": {
+    "objectID": 1971,
+    "city": "Pasadena"
+  },
+  "111": {
+    "objectID": 1988,
+    "city": "Ipswich"
+  },
+  "112": {
+    "objectID": 1990,
+    "city": "Guilford"
+  },
+  "113": {
+    "objectID": 1994,
+    "city": "New Haven"
+  },
+  "114": {
+    "objectID": 1998,
+    "city": "Belchertown"
+  },
+  "115": {
+    "objectID": 1999,
+    "city": "Syracuse"
+  },
+  "116": {
+    "objectID": 2038,
+    "city": "Taunton"
+  },
+  "117": {
+    "objectID": 2139,
+    "city": "Annapolis"
+  },
+  "118": {
+    "objectID": 2181,
+    "city": "Jersey City"
+  },
+  "119": {
+    "objectID": 2235,
+    "city": "Los Angeles"
+  },
+  "120": {
+    "objectID": 2310,
+    "city": "Redwood"
+  },
+  "121": {
+    "objectID": 2334,
+    "city": "Southampton"
+  },
+  "122": {
+    "objectID": 2352,
+    "city": "Greensburg"
+  },
+  "123": {
+    "objectID": 2361,
+    "city": "Kensington"
+  },
+  "124": {
+    "objectID": 2390,
+    "city": "New Bremen"
+  },
+  "125": {
+    "objectID": 4995,
+    "city": "Grand Rapids"
+  },
+  "126": {
+    "objectID": 2413,
+    "city": "New London"
+  },
+  "127": {
+    "objectID": 2427,
+    "city": "Waynesboro"
+  },
+  "128": {
+    "objectID": 2431,
+    "city": "St. Louis"
+  },
+  "129": {
+    "objectID": 2532,
+    "city": "Waterford"
+  },
+  "130": {
+    "objectID": 2602,
+    "city": "Newcastle"
+  },
+  "131": {
+    "objectID": 5494,
+    "city": "Binghamton"
+  },
+  "132": {
+    "objectID": 5508,
+    "city": "High Falls"
+  },
+  "133": {
+    "objectID": 5509,
+    "city": "Griggstown"
+  },
+  "134": {
+    "objectID": 5518,
+    "city": "Millville"
+  },
+  "135": {
+    "objectID": 2972,
+    "city": "Milford"
+  },
+  "136": {
+    "objectID": 3071,
+    "city": "Keene"
+  },
+  "137": {
+    "objectID": 3101,
+    "city": "Malden"
+  },
+  "138": {
+    "objectID": 3136,
+    "city": "Eastwood"
+  },
+  "139": {
+    "objectID": 3189,
+    "city": "Limoges"
+  },
+  "140": {
+    "objectID": 3231,
+    "city": "Nuremberg"
+  },
+  "141": {
+    "objectID": 3307,
+    "city": "Durham"
+  },
+  "142": {
+    "objectID": 6009,
+    "city": "Norwalk"
+  },
+  "143": {
+    "objectID": 6033,
+    "city": "Dresden"
+  },
+  "144": {
+    "objectID": 6063,
+    "city": "Curling"
+  },
+  "145": {
+    "objectID": 3411,
+    "city": "Richmond"
+  },
+  "146": {
+    "objectID": 3414,
+    "city": "Manheim"
+  },
+  "147": {
+    "objectID": 3499,
+    "city": "Roxbury"
+  },
+  "148": {
+    "objectID": 3579,
+    "city": "New Hackensack"
+  },
+  "149": {
+    "objectID": 3580,
+    "city": "Savannah"
+  },
+  "150": {
+    "objectID": 3596,
+    "city": "Aurora"
+  },
+  "151": {
+    "objectID": 3672,
+    "city": "North Attleboro"
+  },
+  "152": {
+    "objectID": 3719,
+    "city": "Bridgetown"
+  },
+  "153": {
+    "objectID": 3721,
+    "city": "Coventry"
+  },
+  "154": {
+    "objectID": 3734,
+    "city": "Louisville"
+  },
+  "155": {
+    "objectID": 3742,
+    "city": "Wellsburg"
+  },
+  "156": {
+    "objectID": 3743,
+    "city": "Vernon"
+  },
+  "157": {
+    "objectID": 3747,
+    "city": "Westford"
+  },
+  "158": {
+    "objectID": 3756,
+    "city": "Huntsville"
+  },
+  "159": {
+    "objectID": 3798,
+    "city": "Mohawk Valley"
+  },
+  "160": {
+    "objectID": 3950,
+    "city": "Sèvres"
+  },
+  "161": {
+    "objectID": 3956,
+    "city": "Marseille"
+  },
+  "162": {
+    "objectID": 4136,
+    "city": "Balmville"
+  },
+  "163": {
+    "objectID": 4143,
+    "city": "Riverside"
+  },
+  "164": {
+    "objectID": 4537,
+    "city": "Santa Barbara"
+  },
+  "165": {
+    "objectID": 4550,
+    "city": "Braintree"
+  },
+  "166": {
+    "objectID": 4565,
+    "city": "Edgefield District"
+  },
+  "167": {
+    "objectID": 4580,
+    "city": "Dorset"
+  },
+  "168": {
+    "objectID": 4638,
+    "city": "Reading"
+  },
+  "169": {
+    "objectID": 4666,
+    "city": "Springfield"
+  },
+  "170": {
+    "objectID": 4716,
+    "city": "San Francisco"
+  },
+  "171": {
+    "objectID": 4724,
+    "city": "Elizabeth"
+  },
+  "172": {
+    "objectID": 4897,
+    "city": "Harrisburg"
+  },
+  "173": {
+    "objectID": 4927,
+    "city": "Haverhill"
+  },
+  "174": {
+    "objectID": 4929,
+    "city": "York"
+  },
+  "175": {
+    "objectID": 4930,
+    "city": "Terryville"
+  },
+  "176": {
+    "objectID": 4931,
+    "city": "Carlisle"
+  },
+  "177": {
+    "objectID": 7406,
+    "city": "Stepney"
+  },
+  "178": {
+    "objectID": 7409,
+    "city": "Guanajuato"
+  },
+  "179": {
+    "objectID": 5175,
+    "city": "Walpole"
+  },
+  "180": {
+    "objectID": 5178,
+    "city": "Lockport"
+  },
+  "181": {
+    "objectID": 5228,
+    "city": "East Aurora"
+  },
+  "182": {
+    "objectID": 5356,
+    "city": "Newbury"
+  },
+  "183": {
+    "objectID": 5609,
+    "city": "Huntington"
+  },
+  "184": {
+    "objectID": 5667,
+    "city": "South Amboy"
+  },
+  "185": {
+    "objectID": 5675,
+    "city": "South Natick"
+  },
+  "186": {
+    "objectID": 5679,
+    "city": "Allowaystown"
+  },
+  "187": {
+    "objectID": 5757,
+    "city": "Sunderland"
+  },
+  "188": {
+    "objectID": 5762,
+    "city": "Gloucester"
+  },
+  "189": {
+    "objectID": 5833,
+    "city": "Biloxi"
+  },
+  "190": {
+    "objectID": 5847,
+    "city": "Kaolin"
+  },
+  "191": {
+    "objectID": 9315,
+    "city": "Winchester"
+  },
+  "192": {
+    "objectID": 9321,
+    "city": "East Hampton"
+  },
+  "193": {
+    "objectID": 9327,
+    "city": "Clifton"
+  },
+  "194": {
+    "objectID": 9332,
+    "city": "Vineland"
+  },
+  "195": {
+    "objectID": 9333,
+    "city": "Flemington"
+  },
+  "196": {
+    "objectID": 9336,
+    "city": "Revere"
+  },
+  "197": {
+    "objectID": 9340,
+    "city": "Honesdale"
+  },
+  "198": {
+    "objectID": 9372,
+    "city": "Detroit"
+  },
+  "199": {
+    "objectID": 9375,
+    "city": "Bedford Village"
+  },
+  "200": {
+    "objectID": 6174,
+    "city": "Greenfield"
+  },
+  "201": {
+    "objectID": 8267,
+    "city": "Wrightstown"
+  },
+  "202": {
+    "objectID": 8330,
+    "city": "Derby"
+  },
+  "203": {
+    "objectID": 8388,
+    "city": "Yalesville"
+  },
+  "204": {
+    "objectID": 8406,
+    "city": "Fairfield"
+  },
+  "205": {
+    "objectID": 8435,
+    "city": "Burlington"
+  },
+  "206": {
+    "objectID": 6656,
+    "city": "Poughkeepsie"
+  },
+  "207": {
+    "objectID": 6676,
+    "city": "Kingston"
+  },
+  "208": {
+    "objectID": 6710,
+    "city": "Westtown"
+  },
+  "209": {
+    "objectID": 6727,
+    "city": "Wilmington"
+  },
+  "210": {
+    "objectID": 6729,
+    "city": "Hoboken"
+  },
+  "211": {
+    "objectID": 6822,
+    "city": "New Brooklyn"
+  },
+  "212": {
+    "objectID": 6839,
+    "city": "Redding"
+  },
+  "213": {
+    "objectID": 6841,
+    "city": "Kittery"
+  },
+  "214": {
+    "objectID": 6888,
+    "city": "Woodbury"
+  },
+  "215": {
+    "objectID": 7086,
+    "city": "Montreal"
+  },
+  "216": {
+    "objectID": 9849,
+    "city": "Minneapolis"
+  },
+  "217": {
+    "objectID": 7751,
+    "city": "Pittsfield"
+  },
+  "218": {
+    "objectID": 7770,
+    "city": "Madison"
+  },
+  "219": {
+    "objectID": 7773,
+    "city": "Rochester"
+  },
+  "220": {
+    "objectID": 7798,
+    "city": "Nashville"
+  },
+  "221": {
+    "objectID": 9613,
+    "city": "Grafton"
+  },
+  "222": {
+    "objectID": 9820,
+    "city": "Kankekee"
+  },
+  "223": {
+    "objectID": 12550,
+    "city": "Newburgh"
+  },
+  "224": {
+    "objectID": 13372,
+    "city": "Park Ridge"
+  },
+  "225": {
+    "objectID": 13473,
+    "city": "Ridgefield"
+  },
+  "226": {
+    "objectID": 13474,
+    "city": "Woodstock"
+  },
+  "227": {
+    "objectID": 13572,
+    "city": "Mount Lebanon"
+  },
+  "228": {
+    "objectID": 13575,
+    "city": "Champlain"
+  },
+  "229": {
+    "objectID": 13576,
+    "city": "Castleton"
+  },
+  "230": {
+    "objectID": 13593,
+    "city": "Bowdoinham"
+  },
+  "231": {
+    "objectID": 13597,
+    "city": "Decatur"
+  },
+  "232": {
+    "objectID": 13602,
+    "city": "Washington Hollow"
+  },
+  "233": {
+    "objectID": 13604,
+    "city": "Mérida"
+  },
+  "234": {
+    "objectID": 13605,
+    "city": "Wethersfield"
+  },
+  "235": {
+    "objectID": 13607,
+    "city": "Stonington"
+  },
+  "236": {
+    "objectID": 13611,
+    "city": "Sag Harbor"
+  },
+  "237": {
+    "objectID": 13617,
+    "city": "Manchester"
+  },
+  "238": {
+    "objectID": 13791,
+    "city": "Fall River"
+  },
+  "239": {
+    "objectID": 13868,
+    "city": "Glen Head"
+  },
+  "240": {
+    "objectID": 13871,
+    "city": "Hardinsburg"
+  },
+  "241": {
+    "objectID": 13876,
+    "city": "Rhinebeck"
+  },
+  "242": {
+    "objectID": 13884,
+    "city": "Russelville, (\"The Knob\")"
+  },
+  "243": {
+    "objectID": 13907,
+    "city": "North's Landing"
+  },
+  "244": {
+    "objectID": 13911,
+    "city": "Perth Amboy"
+  },
+  "245": {
+    "objectID": 13912,
+    "city": "Forestburgh"
+  },
+  "246": {
+    "objectID": 13913,
+    "city": "Monticello"
+  },
+  "247": {
+    "objectID": 13934,
+    "city": "Derry Township"
+  },
+  "248": {
+    "objectID": 13956,
+    "city": "Dixfield"
+  },
+  "249": {
+    "objectID": 13960,
+    "city": "Lacon"
+  },
+  "250": {
+    "objectID": 13965,
+    "city": "Shirvan"
+  },
+  "251": {
+    "objectID": 13966,
+    "city": "Kuba or vicinity"
+  },
+  "252": {
+    "objectID": 13967,
+    "city": "Feragham"
+  },
+  "253": {
+    "objectID": 13968,
+    "city": "Bakshis"
+  },
+  "254": {
+    "objectID": 13970,
+    "city": "Saraband"
+  },
+  "255": {
+    "objectID": 13974,
+    "city": "Jushagan"
+  },
+  "256": {
+    "objectID": 13977,
+    "city": "West Pittsfield"
+  },
+  "257": {
+    "objectID": 13982,
+    "city": "Donegal"
+  },
+  "258": {
+    "objectID": 13984,
+    "city": "Pawtucket"
+  },
+  "259": {
+    "objectID": 14002,
+    "city": "South Manchester"
+  },
+  "260": {
+    "objectID": 14044,
+    "city": "East Lampeter Township"
+  },
+  "261": {
+    "objectID": 14059,
+    "city": "Franklin"
+  },
+  "262": {
+    "objectID": 14060,
+    "city": "Pepperell"
+  },
+  "263": {
+    "objectID": 14062,
+    "city": "Hanover Township"
+  },
+  "264": {
+    "objectID": 14064,
+    "city": "Claremont"
+  },
+  "265": {
+    "objectID": 14380,
+    "city": "Ahmedabad"
+  },
+  "266": {
+    "objectID": 14489,
+    "city": "Monmouth"
+  },
+  "267": {
+    "objectID": 15548,
+    "city": "Elizabeth Furnace"
+  },
+  "268": {
+    "objectID": 14066,
+    "city": "Norfolk"
+  },
+  "269": {
+    "objectID": 14069,
+    "city": "Moorestown"
+  },
+  "270": {
+    "objectID": 14070,
+    "city": "Attleborough"
+  },
+  "271": {
+    "objectID": 14072,
+    "city": "Halfmoon"
+  },
+  "272": {
+    "objectID": 14073,
+    "city": "Danvers"
+  },
+  "273": {
+    "objectID": 14075,
+    "city": "Brunswick"
+  },
+  "274": {
+    "objectID": 14076,
+    "city": "Andover"
+  },
+  "275": {
+    "objectID": 14083,
+    "city": "Cornish"
+  },
+  "276": {
+    "objectID": 14084,
+    "city": "Nelson"
+  },
+  "277": {
+    "objectID": 14094,
+    "city": "East Hempfield"
+  },
+  "278": {
+    "objectID": 14105,
+    "city": "Lowell"
+  },
+  "279": {
+    "objectID": 14106,
+    "city": "Sterling"
+  },
+  "280": {
+    "objectID": 14111,
+    "city": "Stockbridge"
+  },
+  "281": {
+    "objectID": 14127,
+    "city": "New Hartford"
+  },
+  "282": {
+    "objectID": 14135,
+    "city": "Freehold"
+  },
+  "283": {
+    "objectID": 14140,
+    "city": "Fayetteville"
+  },
+  "284": {
+    "objectID": 14193,
+    "city": "Millersburg"
+  },
+  "285": {
+    "objectID": 14194,
+    "city": "Delhi"
+  },
+  "286": {
+    "objectID": 14195,
+    "city": "Southport"
+  },
+  "287": {
+    "objectID": 14198,
+    "city": "Lewistown"
+  },
+  "288": {
+    "objectID": 14282,
+    "city": "Rose Valley"
+  },
+  "289": {
+    "objectID": 14358,
+    "city": "Phoenixville"
+  },
+  "290": {
+    "objectID": 16149,
+    "city": "Johnstown"
+  },
+  "291": {
+    "objectID": 13632,
+    "city": "Millstone"
+  },
+  "292": {
+    "objectID": 13636,
+    "city": "Lancaster City"
+  },
+  "293": {
+    "objectID": 13672,
+    "city": "North Adams"
+  },
+  "294": {
+    "objectID": 13732,
+    "city": "Lyon"
+  },
+  "295": {
+    "objectID": 13734,
+    "city": "Columbia"
+  },
+  "296": {
+    "objectID": 13745,
+    "city": "Warren"
+  },
+  "297": {
+    "objectID": 13754,
+    "city": "Bethlehem"
+  },
+  "298": {
+    "objectID": 13761,
+    "city": "Paterson"
+  },
+  "299": {
+    "objectID": 13763,
+    "city": "Litchfield"
+  },
+  "300": {
+    "objectID": 13776,
+    "city": "Dover"
+  },
+  "301": {
+    "objectID": 13778,
+    "city": "Germantown"
+  },
+  "302": {
+    "objectID": 14913,
+    "city": "Lawrence"
+  },
+  "303": {
+    "objectID": 14991,
+    "city": "Doylestown"
+  },
+  "304": {
+    "objectID": 16566,
+    "city": "New Rochelle"
+  },
+  "305": {
+    "objectID": 16754,
+    "city": "East Haven"
+  },
+  "306": {
+    "objectID": 16836,
+    "city": "Attleboro"
+  },
+  "307": {
+    "objectID": 15862,
+    "city": "Colorado Springs"
+  },
+  "308": {
+    "objectID": 15980,
+    "city": "Appledore"
+  },
+  "309": {
+    "objectID": 17555,
+    "city": "Arthur"
+  },
+  "310": {
+    "objectID": 17580,
+    "city": "Kalona"
+  },
+  "311": {
+    "objectID": 17980,
+    "city": "Somers"
+  },
+  "312": {
+    "objectID": 19017,
+    "city": "Ashburnham"
+  },
+  "313": {
+    "objectID": 16315,
+    "city": "Utica"
+  },
+  "314": {
+    "objectID": 20205,
+    "city": "Brighton"
+  },
+  "315": {
+    "objectID": 20282,
+    "city": "the Bronx"
+  },
+  "316": {
+    "objectID": 20342,
+    "city": "University City"
+  },
+  "317": {
+    "objectID": 14791,
+    "city": "Pocasset"
+  },
+  "318": {
+    "objectID": 17518,
+    "city": "Campton"
+  },
+  "319": {
+    "objectID": 21976,
+    "city": "possibly Istanbul"
+  },
+  "320": {
+    "objectID": 21980,
+    "city": "Augsburg"
+  },
+  "321": {
+    "objectID": 21981,
+    "city": "Milan"
+  },
+  "322": {
+    "objectID": 21984,
+    "city": "Innsbruck"
+  },
+  "323": {
+    "objectID": 22000,
+    "city": "Augsburg and Landshut"
+  },
+  "324": {
+    "objectID": 22002,
+    "city": "Venice"
+  },
+  "325": {
+    "objectID": 22017,
+    "city": "Naples"
+  },
+  "326": {
+    "objectID": 22092,
+    "city": "Wada"
+  },
+  "327": {
+    "objectID": 22115,
+    "city": "Zürich"
+  },
+  "328": {
+    "objectID": 22139,
+    "city": "Greenwich"
+  },
+  "329": {
+    "objectID": 22150,
+    "city": "probably Augsburg"
+  },
+  "330": {
+    "objectID": 22185,
+    "city": "Milan and Brescia"
+  },
+  "331": {
+    "objectID": 22223,
+    "city": "Brescia"
+  },
+  "332": {
+    "objectID": 22242,
+    "city": "Landshut"
+  },
+  "333": {
+    "objectID": 22253,
+    "city": "Landshut and Augsburg (?)"
+  },
+  "334": {
+    "objectID": 22269,
+    "city": "possibly Brescia"
+  },
+  "335": {
+    "objectID": 22270,
+    "city": "possibly Brunswick-Wölfenbüttel"
+  },
+  "336": {
+    "objectID": 22272,
+    "city": "probably Innsbruck"
+  },
+  "337": {
+    "objectID": 22276,
+    "city": "probably Milan"
+  },
+  "338": {
+    "objectID": 22281,
+    "city": "possibly Bologna"
+  },
+  "339": {
+    "objectID": 19356,
+    "city": "Montogmery"
+  },
+  "340": {
+    "objectID": 19444,
+    "city": "Washington, DC"
+  },
+  "341": {
+    "objectID": 19741,
+    "city": "Center Lovell"
+  },
+  "342": {
+    "objectID": 19818,
+    "city": "Carmel"
+  },
+  "343": {
+    "objectID": 19834,
+    "city": "Milwaukee"
+  },
+  "344": {
+    "objectID": 19841,
+    "city": "Marlotte"
+  },
+  "345": {
+    "objectID": 19849,
+    "city": "Tarrytown"
+  },
+  "346": {
+    "objectID": 19860,
+    "city": "Dedham"
+  },
+  "347": {
+    "objectID": 19881,
+    "city": "Westhampton"
+  },
+  "348": {
+    "objectID": 19883,
+    "city": "Tiltonsville"
+  },
+  "349": {
+    "objectID": 19890,
+    "city": "Fairfax"
+  },
+  "350": {
+    "objectID": 19893,
+    "city": "Metuchen"
+  },
+  "351": {
+    "objectID": 19894,
+    "city": "Terra Cotta"
+  },
+  "352": {
+    "objectID": 19900,
+    "city": "Corona"
+  },
+  "353": {
+    "objectID": 19903,
+    "city": "West Sterling"
+  },
+  "354": {
+    "objectID": 19904,
+    "city": "Hot Springs"
+  },
+  "355": {
+    "objectID": 19923,
+    "city": "Alfred"
+  },
+  "356": {
+    "objectID": 19942,
+    "city": "Rocky River"
+  },
+  "357": {
+    "objectID": 19948,
+    "city": "Cranbrook"
+  },
+  "358": {
+    "objectID": 19950,
+    "city": "Oakland"
+  },
+  "359": {
+    "objectID": 19963,
+    "city": "Minerva"
+  },
+  "360": {
+    "objectID": 19990,
+    "city": "Cambridge City"
+  },
+  "361": {
+    "objectID": 19997,
+    "city": "Pleasant Hill"
+  },
+  "362": {
+    "objectID": 20030,
+    "city": "Menlo Park"
+  },
+  "363": {
+    "objectID": 22626,
+    "city": "Eibar"
+  },
+  "364": {
+    "objectID": 22671,
+    "city": "Osaka"
+  },
+  "365": {
+    "objectID": 22680,
+    "city": "Matsumoto"
+  },
+  "366": {
+    "objectID": 22723,
+    "city": "Kamakura"
+  },
+  "367": {
+    "objectID": 22730,
+    "city": "probably Greenwich or London"
+  },
+  "368": {
+    "objectID": 22732,
+    "city": "Lisieux"
+  },
+  "369": {
+    "objectID": 22736,
+    "city": "Madrid"
+  },
+  "370": {
+    "objectID": 22750,
+    "city": "Sanuki"
+  },
+  "371": {
+    "objectID": 22757,
+    "city": "probably Brescia"
+  },
+  "372": {
+    "objectID": 22768,
+    "city": "London or Birmingham"
+  },
+  "373": {
+    "objectID": 22775,
+    "city": "Brussels"
+  },
+  "374": {
+    "objectID": 22855,
+    "city": "probably Eugui, Pamplona"
+  },
+  "375": {
+    "objectID": 22857,
+    "city": "Erfurt"
+  },
+  "376": {
+    "objectID": 20599,
+    "city": "Rhode Island"
+  },
+  "377": {
+    "objectID": 20615,
+    "city": "Hatfield"
+  },
+  "378": {
+    "objectID": 20754,
+    "city": "Greenpoint, Brooklyn"
+  },
+  "379": {
+    "objectID": 20765,
+    "city": "New York City"
+  },
+  "380": {
+    "objectID": 21186,
+    "city": "Fort Laramie"
+  },
+  "381": {
+    "objectID": 21304,
+    "city": "Pleasant Valley"
+  },
+  "382": {
+    "objectID": 23045,
+    "city": "Schwäbisch Gmünd"
+  },
+  "383": {
+    "objectID": 23049,
+    "city": "Pistoia"
+  },
+  "384": {
+    "objectID": 23054,
+    "city": "Milan or Brescia"
+  },
+  "385": {
+    "objectID": 23155,
+    "city": "Chalcis"
+  },
+  "386": {
+    "objectID": 23191,
+    "city": "possibly Augsburg"
+  },
+  "387": {
+    "objectID": 23197,
+    "city": "possibly Antwerp"
+  },
+  "388": {
+    "objectID": 23216,
+    "city": "probably Nuremberg"
+  },
+  "389": {
+    "objectID": 21660,
+    "city": "Upper Providence"
+  },
+  "390": {
+    "objectID": 21853,
+    "city": "Echizin"
+  },
+  "391": {
+    "objectID": 21889,
+    "city": "Hagi"
+  },
+  "392": {
+    "objectID": 21892,
+    "city": "Mito"
+  },
+  "393": {
+    "objectID": 21924,
+    "city": "Erlangen"
+  },
+  "394": {
+    "objectID": 21930,
+    "city": "Solingen"
+  },
+  "395": {
+    "objectID": 21940,
+    "city": "probably Stuttgart"
+  },
+  "396": {
+    "objectID": 21944,
+    "city": "probably Naples"
+  },
+  "397": {
+    "objectID": 21962,
+    "city": "Hall"
+  },
+  "398": {
+    "objectID": 21963,
+    "city": "Munich"
+  },
+  "399": {
+    "objectID": 21965,
+    "city": "Cieszyn"
+  },
+  "400": {
+    "objectID": 21968,
+    "city": "Munich and Augsburg"
+  },
+  "401": {
+    "objectID": 21969,
+    "city": "Suhl"
+  },
+  "402": {
+    "objectID": 23899,
+    "city": "Kyoto"
+  },
+  "403": {
+    "objectID": 23943,
+    "city": "Bargi"
+  },
+  "404": {
+    "objectID": 23950,
+    "city": "Versailles"
+  },
+  "405": {
+    "objectID": 24029,
+    "city": "probably Golconda"
+  },
+  "406": {
+    "objectID": 24238,
+    "city": "Possibly Istanbul"
+  },
+  "407": {
+    "objectID": 24307,
+    "city": "Thanjavur"
+  },
+  "408": {
+    "objectID": 24320,
+    "city": "probably Istanbul"
+  },
+  "409": {
+    "objectID": 22363,
+    "city": "Saxony"
+  },
+  "410": {
+    "objectID": 22364,
+    "city": "probably Paris"
+  },
+  "411": {
+    "objectID": 22368,
+    "city": "possibly Munich"
+  },
+  "412": {
+    "objectID": 22374,
+    "city": "possibly Emilia"
+  },
+  "413": {
+    "objectID": 22382,
+    "city": "Aachen"
+  },
+  "414": {
+    "objectID": 22388,
+    "city": "Maastricht"
+  },
+  "415": {
+    "objectID": 22391,
+    "city": "Augsburg or Nuremberg"
+  },
+  "416": {
+    "objectID": 22393,
+    "city": "possibly Nuremberg"
+  },
+  "417": {
+    "objectID": 22400,
+    "city": "Innsbruck or Mühlau"
+  },
+  "418": {
+    "objectID": 22438,
+    "city": "Bichu"
+  },
+  "419": {
+    "objectID": 24490,
+    "city": "Seringapatam"
+  },
+  "420": {
+    "objectID": 24650,
+    "city": "Havana"
+  },
+  "421": {
+    "objectID": 24651,
+    "city": "Old Boston, Cambridge, Watertown"
+  },
+  "422": {
+    "objectID": 24654,
+    "city": "Shrewsbury"
+  },
+  "423": {
+    "objectID": 24661,
+    "city": "Antwerp"
+  },
+  "424": {
+    "objectID": 24671,
+    "city": "possibly Paris"
+  },
+  "425": {
+    "objectID": 24684,
+    "city": "Versailles and Paris"
+  },
+  "426": {
+    "objectID": 24693,
+    "city": "probably Bologna"
+  },
+  "427": {
+    "objectID": 24700,
+    "city": "probably Venice"
+  },
+  "428": {
+    "objectID": 24701,
+    "city": "Mühlau"
+  },
+  "429": {
+    "objectID": 24708,
+    "city": "possibly Birmingham"
+  },
+  "430": {
+    "objectID": 22878,
+    "city": "possibly Vienna"
+  },
+  "431": {
+    "objectID": 22905,
+    "city": "possibly Brunswick"
+  },
+  "432": {
+    "objectID": 22907,
+    "city": "Dresden or Annaberg"
+  },
+  "433": {
+    "objectID": 22908,
+    "city": "probably Dresden or Annaberg"
+  },
+  "434": {
+    "objectID": 22918,
+    "city": "Tula"
+  },
+  "435": {
+    "objectID": 22934,
+    "city": "Nagasaki"
+  },
+  "436": {
+    "objectID": 22940,
+    "city": "probably Tula"
+  },
+  "437": {
+    "objectID": 22945,
+    "city": "Strasbourg"
+  },
+  "438": {
+    "objectID": 24804,
+    "city": "Fort Ticonderoga"
+  },
+  "439": {
+    "objectID": 24815,
+    "city": "Prague"
+  },
+  "440": {
+    "objectID": 24820,
+    "city": "possibly Naples"
+  },
+  "441": {
+    "objectID": 24837,
+    "city": "Reggio Emilia"
+  },
+  "442": {
+    "objectID": 24844,
+    "city": "Whitneyville"
+  },
+  "443": {
+    "objectID": 24847,
+    "city": "Griswoldville"
+  },
+  "444": {
+    "objectID": 24852,
+    "city": "probably Prague"
+  },
+  "445": {
+    "objectID": 24859,
+    "city": "Regensburg"
+  },
+  "446": {
+    "objectID": 24864,
+    "city": "Osafune"
+  },
+  "447": {
+    "objectID": 24900,
+    "city": "possibly Granada"
+  },
+  "448": {
+    "objectID": 24927,
+    "city": "Saint Petersburg"
+  },
+  "449": {
+    "objectID": 24929,
+    "city": "Saint-Etienne"
+  },
+  "450": {
+    "objectID": 24953,
+    "city": "Istanbul"
+  },
+  "451": {
+    "objectID": 24956,
+    "city": "Parma"
+  },
+  "452": {
+    "objectID": 24975,
+    "city": "Toyohara"
+  },
+  "453": {
+    "objectID": 25022,
+    "city": "Dingolfing"
+  },
+  "454": {
+    "objectID": 25057,
+    "city": "Milan and Venice"
+  },
+  "455": {
+    "objectID": 25140,
+    "city": "possibly Venice"
+  },
+  "456": {
+    "objectID": 25165,
+    "city": "probably Český Těšin"
+  },
+  "457": {
+    "objectID": 23321,
+    "city": "probably Brussels"
+  },
+  "458": {
+    "objectID": 23333,
+    "city": "possibly Chomutov"
+  },
+  "459": {
+    "objectID": 23337,
+    "city": "probably Dresden"
+  },
+  "460": {
+    "objectID": 23345,
+    "city": "possibly Nottingham"
+  },
+  "461": {
+    "objectID": 25366,
+    "city": "Odenwald"
+  },
+  "462": {
+    "objectID": 25368,
+    "city": "Probably Vijayapur"
+  },
+  "463": {
+    "objectID": 25381,
+    "city": "Probably Nuremberg"
+  },
+  "464": {
+    "objectID": 25406,
+    "city": "possibly Florence"
+  },
+  "465": {
+    "objectID": 25415,
+    "city": "Landshut or Augsburg"
+  },
+  "466": {
+    "objectID": 25594,
+    "city": "Hever"
+  },
+  "467": {
+    "objectID": 25595,
+    "city": "Haseley"
+  },
+  "468": {
+    "objectID": 25596,
+    "city": "Penn"
+  },
+  "469": {
+    "objectID": 25597,
+    "city": "Etchingham"
+  },
+  "470": {
+    "objectID": 25612,
+    "city": "Thebes"
+  },
+  "471": {
+    "objectID": 25615,
+    "city": "Sheldwich"
+  },
+  "472": {
+    "objectID": 25619,
+    "city": "Cobham"
+  },
+  "473": {
+    "objectID": 25636,
+    "city": "Karlovy Vary"
+  },
+  "474": {
+    "objectID": 25638,
+    "city": "Nāgal Rājpūt"
+  },
+  "475": {
+    "objectID": 7958,
+    "city": "Wethersfeild"
+  },
+  "476": {
+    "objectID": 7961,
+    "city": "Thurmont"
+  },
+  "477": {
+    "objectID": 7970,
+    "city": "Cranston"
+  },
+  "478": {
+    "objectID": 7999,
+    "city": "New Castle"
+  },
+  "479": {
+    "objectID": 8030,
+    "city": "Brookfield"
+  },
+  "480": {
+    "objectID": 8151,
+    "city": "Hopkinton"
+  },
+  "481": {
+    "objectID": 8154,
+    "city": "New Brunswick"
+  },
+  "482": {
+    "objectID": 26561,
+    "city": "Boston or Philadelphia"
+  },
+  "483": {
+    "objectID": 23856,
+    "city": "Yokoyama"
+  },
+  "484": {
+    "objectID": 27172,
+    "city": "Liege"
+  },
+  "485": {
+    "objectID": 27174,
+    "city": "probably Landshut"
+  },
+  "486": {
+    "objectID": 27183,
+    "city": "Possibly Milan"
+  },
+  "487": {
+    "objectID": 27281,
+    "city": "Budissin"
+  },
+  "488": {
+    "objectID": 27313,
+    "city": "Belluno"
+  },
+  "489": {
+    "objectID": 27347,
+    "city": "Munich (?)"
+  },
+  "490": {
+    "objectID": 27369,
+    "city": "Seville"
+  },
+  "491": {
+    "objectID": 27377,
+    "city": "Dublin"
+  },
+  "492": {
+    "objectID": 27387,
+    "city": "Aceh"
+  },
+  "493": {
+    "objectID": 27392,
+    "city": "Pisa"
+  },
+  "494": {
+    "objectID": 27393,
+    "city": "Teschen"
+  },
+  "495": {
+    "objectID": 27430,
+    "city": "Potsdam"
+  },
+  "496": {
+    "objectID": 27455,
+    "city": "possibly Solingen"
+  },
+  "497": {
+    "objectID": 27483,
+    "city": "Wrentham"
+  },
+  "498": {
+    "objectID": 24785,
+    "city": "Vienna"
+  },
+  "499": {
+    "objectID": 27874,
+    "city": "Howth"
+  },
+  "500": {
+    "objectID": 27896,
+    "city": "Tukuran"
+  },
+  "501": {
+    "objectID": 27945,
+    "city": "Rome"
+  },
+  "502": {
+    "objectID": 26445,
+    "city": "Basel"
+  },
+  "503": {
+    "objectID": 26451,
+    "city": "said to have been found in Givet"
+  },
+  "504": {
+    "objectID": 26466,
+    "city": "near ʻAkko"
+  },
+  "505": {
+    "objectID": 26485,
+    "city": "near Acre"
+  },
+  "506": {
+    "objectID": 26515,
+    "city": "Cologne"
+  },
+  "507": {
+    "objectID": 26520,
+    "city": "Eugui"
+  },
+  "508": {
+    "objectID": 26554,
+    "city": "Stockholm"
+  },
+  "509": {
+    "objectID": 26555,
+    "city": "Doune"
+  },
+  "510": {
+    "objectID": 26560,
+    "city": "Köthen"
+  },
+  "511": {
+    "objectID": 27492,
+    "city": "Bologna"
+  },
+  "512": {
+    "objectID": 27502,
+    "city": "Frankfurt"
+  },
+  "513": {
+    "objectID": 27559,
+    "city": "Gilbert"
+  },
+  "514": {
+    "objectID": 27560,
+    "city": "Orwigsburg"
+  },
+  "515": {
+    "objectID": 27561,
+    "city": "New Berlin"
+  },
+  "516": {
+    "objectID": 27571,
+    "city": "Gmünd"
+  },
+  "517": {
+    "objectID": 28992,
+    "city": "Liège"
+  },
+  "518": {
+    "objectID": 29186,
+    "city": "Dolkheim"
+  },
+  "519": {
+    "objectID": 29190,
+    "city": "Solothurn"
+  },
+  "520": {
+    "objectID": 29202,
+    "city": "Kreuznach"
+  },
+  "521": {
+    "objectID": 29203,
+    "city": "Stradonice"
+  },
+  "522": {
+    "objectID": 29228,
+    "city": "Castiglione del Lago"
+  },
+  "523": {
+    "objectID": 29261,
+    "city": "possibly Chihuahua"
+  },
+  "524": {
+    "objectID": 29327,
+    "city": "Andria"
+  },
+  "525": {
+    "objectID": 29333,
+    "city": "Poděbrady"
+  },
+  "526": {
+    "objectID": 29348,
+    "city": "Lodi Vecchio"
+  },
+  "527": {
+    "objectID": 29504,
+    "city": "Boston, Cambridge, Brookline"
+  },
+  "528": {
+    "objectID": 29564,
+    "city": "Hampton Falls"
+  },
+  "529": {
+    "objectID": 29566,
+    "city": "Ticonderoga"
+  },
+  "530": {
+    "objectID": 29576,
+    "city": "Lunenburg"
+  },
+  "531": {
+    "objectID": 29577,
+    "city": "St. Augustine"
+  },
+  "532": {
+    "objectID": 29584,
+    "city": "Aurelius"
+  },
+  "533": {
+    "objectID": 29593,
+    "city": "Wolfenbüttel"
+  },
+  "534": {
+    "objectID": 29594,
+    "city": "Barcelona"
+  },
+  "535": {
+    "objectID": 29616,
+    "city": "Srirangapatna"
+  },
+  "536": {
+    "objectID": 31378,
+    "city": "Madura"
+  },
+  "537": {
+    "objectID": 30123,
+    "city": "Lucknow"
+  },
+  "538": {
+    "objectID": 30212,
+    "city": "Beijing"
+  },
+  "539": {
+    "objectID": 30657,
+    "city": "Enggano, Pulau"
+  },
+  "540": {
+    "objectID": 30737,
+    "city": "Baroda"
+  },
+  "541": {
+    "objectID": 30764,
+    "city": "Madras"
+  },
+  "542": {
+    "objectID": 31051,
+    "city": "Gorontalo"
+  },
+  "543": {
+    "objectID": 31058,
+    "city": "Besançon"
+  },
+  "544": {
+    "objectID": 31059,
+    "city": "Lombok"
+  },
+  "545": {
+    "objectID": 31062,
+    "city": "Malabang"
+  },
+  "546": {
+    "objectID": 31137,
+    "city": "Mysore"
+  },
+  "547": {
+    "objectID": 31206,
+    "city": "Nias, Pulau"
+  },
+  "548": {
+    "objectID": 31220,
+    "city": "Barat Daya, Kepulauan"
+  },
+  "549": {
+    "objectID": 31226,
+    "city": "possibly Madura"
+  },
+  "550": {
+    "objectID": 31227,
+    "city": "Surakarta"
+  },
+  "551": {
+    "objectID": 31244,
+    "city": "Sumbawa"
+  },
+  "552": {
+    "objectID": 31297,
+    "city": "Naga Hills"
+  },
+  "553": {
+    "objectID": 31304,
+    "city": "Erzurum"
+  },
+  "554": {
+    "objectID": 31305,
+    "city": "Yogyakarta"
+  },
+  "555": {
+    "objectID": 31306,
+    "city": "Cirebon"
+  },
+  "556": {
+    "objectID": 31318,
+    "city": "Kalimantan Selatan"
+  },
+  "557": {
+    "objectID": 31323,
+    "city": "Palembang"
+  },
+  "558": {
+    "objectID": 31339,
+    "city": "Madurese"
+  },
+  "559": {
+    "objectID": 29119,
+    "city": "Probably Augsburg"
+  },
+  "560": {
+    "objectID": 31948,
+    "city": "Possibly Bursa"
+  },
+  "561": {
+    "objectID": 32102,
+    "city": "possibly Milan"
+  },
+  "562": {
+    "objectID": 32137,
+    "city": "Vijayapur"
+  },
+  "563": {
+    "objectID": 32177,
+    "city": "New Windsor"
+  },
+  "564": {
+    "objectID": 31399,
+    "city": "Solor, Kepulauan"
+  },
+  "565": {
+    "objectID": 31487,
+    "city": "Possibly Bandung or Cirebon"
+  },
+  "566": {
+    "objectID": 31504,
+    "city": "Bundi"
+  },
+  "567": {
+    "objectID": 31564,
+    "city": "possibly Kalimantan Barat"
+  },
+  "568": {
+    "objectID": 31821,
+    "city": "Nias"
+  },
+  "569": {
+    "objectID": 31823,
+    "city": "Delhi or Lucknow"
+  },
+  "570": {
+    "objectID": 31838,
+    "city": "possibly Hyderabad"
+  },
+  "571": {
+    "objectID": 31843,
+    "city": "possibly Lucknow"
+  },
+  "572": {
+    "objectID": 30827,
+    "city": "East Malaysia"
+  },
+  "573": {
+    "objectID": 30871,
+    "city": "Chennai"
+  },
+  "574": {
+    "objectID": 33495,
+    "city": "Agen"
+  },
+  "575": {
+    "objectID": 33533,
+    "city": "Reggio"
+  },
+  "576": {
+    "objectID": 33549,
+    "city": "possibly Dresden"
+  },
+  "577": {
+    "objectID": 33649,
+    "city": "Port of Bordeaux"
+  },
+  "578": {
+    "objectID": 32831,
+    "city": "Florence"
+  },
+  "579": {
+    "objectID": 32843,
+    "city": "Klausen"
+  },
+  "580": {
+    "objectID": 32850,
+    "city": "Mantes"
+  },
+  "581": {
+    "objectID": 32852,
+    "city": "possibly London"
+  },
+  "582": {
+    "objectID": 32899,
+    "city": "Grüenberg"
+  },
+  "583": {
+    "objectID": 32903,
+    "city": "Rauschenberg"
+  },
+  "584": {
+    "objectID": 32941,
+    "city": "Fishers Island"
+  },
+  "585": {
+    "objectID": 33240,
+    "city": "Département de la Haute-Savoie"
+  },
+  "586": {
+    "objectID": 32334,
+    "city": "Carlsbad"
+  },
+  "587": {
+    "objectID": 32380,
+    "city": "probably London"
+  },
+  "588": {
+    "objectID": 32432,
+    "city": "probably Vienna"
+  },
+  "589": {
+    "objectID": 32587,
+    "city": "Zurich"
+  },
+  "590": {
+    "objectID": 32591,
+    "city": "possibly Strasbourg"
+  },
+  "591": {
+    "objectID": 32744,
+    "city": "Kubachi"
+  },
+  "592": {
+    "objectID": 34905,
+    "city": "possibly Madrid"
+  },
+  "593": {
+    "objectID": 32277,
+    "city": "Bali"
+  },
+  "594": {
+    "objectID": 32316,
+    "city": "Maestricht"
+  },
+  "595": {
+    "objectID": 34810,
+    "city": "Warsaw"
+  },
+  "596": {
+    "objectID": 34011,
+    "city": "Aragon"
+  },
+  "597": {
+    "objectID": 34024,
+    "city": "Poblete"
+  },
+  "598": {
+    "objectID": 34026,
+    "city": "Clermont-Ferrand"
+  },
+  "599": {
+    "objectID": 34064,
+    "city": "near Vienna"
+  },
+  "600": {
+    "objectID": 34101,
+    "city": "Santiago"
+  },
+  "601": {
+    "objectID": 34320,
+    "city": "Madway"
+  },
+  "602": {
+    "objectID": 35169,
+    "city": "Dieppe"
+  },
+  "603": {
+    "objectID": 35375,
+    "city": "Derge"
+  },
+  "604": {
+    "objectID": 35635,
+    "city": "Golconda"
+  },
+  "605": {
+    "objectID": 35667,
+    "city": "possibly Liege"
+  },
+  "606": {
+    "objectID": 33885,
+    "city": "Český Těšin"
+  },
+  "607": {
+    "objectID": 35789,
+    "city": "Innsbruck and Mühlau"
+  },
+  "608": {
+    "objectID": 35845,
+    "city": "Chicopee"
+  },
+  "609": {
+    "objectID": 33316,
+    "city": "Ripoll"
+  },
+  "610": {
+    "objectID": 33325,
+    "city": "Norrkoping"
+  },
+  "611": {
+    "objectID": 33326,
+    "city": "Sedan"
+  },
+  "612": {
+    "objectID": 26817,
+    "city": "Canterbury"
+  },
+  "613": {
+    "objectID": 26927,
+    "city": "Cairo"
+  },
+  "614": {
+    "objectID": 26948,
+    "city": "probably Rome"
+  },
+  "615": {
+    "objectID": 27061,
+    "city": "Salzburg"
+  },
+  "616": {
+    "objectID": 80721,
+    "city": "probably Bukhara"
+  },
+  "617": {
+    "objectID": 80390,
+    "city": "probably Aleppo or Damascus"
+  },
+  "618": {
+    "objectID": 81715,
+    "city": "Bukhara"
+  },
+  "619": {
+    "objectID": 81729,
+    "city": "Damascus"
+  },
+  "620": {
+    "objectID": 85435,
+    "city": "Karpurthala"
+  },
+  "621": {
+    "objectID": 85437,
+    "city": "Kandahar or Ghazi"
+  },
+  "622": {
+    "objectID": 85540,
+    "city": "Bursa"
+  },
+  "623": {
+    "objectID": 85570,
+    "city": "Nairobi"
+  },
+  "624": {
+    "objectID": 85571,
+    "city": "Kinshasa"
+  },
+  "625": {
+    "objectID": 85576,
+    "city": "Kumasi"
+  },
+  "626": {
+    "objectID": 85580,
+    "city": "Arusha"
+  },
+  "627": {
+    "objectID": 85624,
+    "city": "Hammamet"
+  },
+  "628": {
+    "objectID": 85633,
+    "city": "Tunis"
+  },
+  "629": {
+    "objectID": 85643,
+    "city": "possibly Raf-Raf"
+  },
+  "630": {
+    "objectID": 85645,
+    "city": "Raf-Raf"
+  },
+  "631": {
+    "objectID": 85842,
+    "city": "Elbasan"
+  },
+  "632": {
+    "objectID": 85854,
+    "city": "Sarajevo"
+  },
+  "633": {
+    "objectID": 86182,
+    "city": "Srinagar"
+  },
+  "634": {
+    "objectID": 86188,
+    "city": "Cutch"
+  },
+  "635": {
+    "objectID": 86241,
+    "city": "Quteife"
+  },
+  "636": {
+    "objectID": 86242,
+    "city": "Galilee"
+  },
+  "637": {
+    "objectID": 86243,
+    "city": "Qalamun region (festive dress); others from Aleppo or Damascus"
+  },
+  "638": {
+    "objectID": 86270,
+    "city": "Aleppo"
+  },
+  "639": {
+    "objectID": 82690,
+    "city": "probably Qalat Zaman"
+  },
+  "640": {
+    "objectID": 93793,
+    "city": "Marrakesh"
+  },
+  "641": {
+    "objectID": 93933,
+    "city": "Aleppo or Damascus"
+  },
+  "642": {
+    "objectID": 89229,
+    "city": "probably Damascus"
+  },
+  "643": {
+    "objectID": 126919,
+    "city": "probably Aleppo"
+  },
+  "644": {
+    "objectID": 126952,
+    "city": "probably  Aleppo or Damascus"
+  },
+  "645": {
+    "objectID": 127216,
+    "city": "Homs"
+  },
+  "646": {
+    "objectID": 141956,
+    "city": "probably Hama"
+  },
+  "647": {
+    "objectID": 141959,
+    "city": "Ma'arat al-Nu'man"
+  },
+  "648": {
+    "objectID": 173291,
+    "city": "Montenegro"
+  },
+  "649": {
+    "objectID": 208019,
+    "city": "Weimar"
+  },
+  "650": {
+    "objectID": 215279,
+    "city": "San Miguel"
+  },
+  "651": {
+    "objectID": 204279,
+    "city": "Quito"
+  },
+  "652": {
+    "objectID": 232204,
+    "city": "Cuzco"
+  },
+  "653": {
+    "objectID": 307443,
+    "city": "Uxmal"
+  },
+  "654": {
+    "objectID": 308005,
+    "city": "Pekalongan"
+  },
+  "655": {
+    "objectID": 308006,
+    "city": "Pekalongan (?)"
+  },
+  "656": {
+    "objectID": 308009,
+    "city": "Pekalongan or Surabaya"
+  },
+  "657": {
+    "objectID": 307501,
+    "city": "Cocha or Chaco"
+  },
+  "658": {
+    "objectID": 307833,
+    "city": "Saltillo"
+  },
+  "659": {
+    "objectID": 310248,
+    "city": "Laikom"
+  },
+  "660": {
+    "objectID": 308245,
+    "city": "Court of Benin"
+  },
+  "661": {
+    "objectID": 310734,
+    "city": "Bandiagara region (?)"
+  },
+  "662": {
+    "objectID": 310736,
+    "city": "Kayes region"
+  },
+  "663": {
+    "objectID": 310754,
+    "city": "Ladiokaha"
+  },
+  "664": {
+    "objectID": 310758,
+    "city": "Lataha"
+  },
+  "665": {
+    "objectID": 310765,
+    "city": "Tintam village"
+  },
+  "666": {
+    "objectID": 310777,
+    "city": "Efon-Alaiye"
+  },
+  "667": {
+    "objectID": 310778,
+    "city": "Efon-Alaiye region"
+  },
+  "668": {
+    "objectID": 310779,
+    "city": "Seno Plain region"
+  },
+  "669": {
+    "objectID": 310780,
+    "city": "Bougouni or Dioila region"
+  },
+  "670": {
+    "objectID": 310789,
+    "city": "Ségou region"
+  },
+  "671": {
+    "objectID": 310794,
+    "city": "Boni village"
+  },
+  "672": {
+    "objectID": 310806,
+    "city": "Bamako region (?)"
+  },
+  "673": {
+    "objectID": 310812,
+    "city": "Dabuho area"
+  },
+  "674": {
+    "objectID": 310817,
+    "city": "Miniankala region (?)"
+  },
+  "675": {
+    "objectID": 310829,
+    "city": "Krinjabo"
+  },
+  "676": {
+    "objectID": 310831,
+    "city": "Bondoukou or Dabakala area"
+  },
+  "677": {
+    "objectID": 310833,
+    "city": "Ila Orangun or Efon-Alaiye region (?)"
+  },
+  "678": {
+    "objectID": 310838,
+    "city": "Possibly Bouna"
+  },
+  "679": {
+    "objectID": 310853,
+    "city": "Kimano village"
+  },
+  "680": {
+    "objectID": 309525,
+    "city": "Comala"
+  },
+  "681": {
+    "objectID": 309532,
+    "city": "Penonomé (?)"
+  },
+  "682": {
+    "objectID": 311196,
+    "city": "Namatanai village"
+  },
+  "683": {
+    "objectID": 311201,
+    "city": "Sauwa or Erma village"
+  },
+  "684": {
+    "objectID": 311214,
+    "city": "Bau village"
+  },
+  "685": {
+    "objectID": 311219,
+    "city": "Roebourne-Ashburton"
+  },
+  "686": {
+    "objectID": 311220,
+    "city": "Tamin village"
+  },
+  "687": {
+    "objectID": 311222,
+    "city": "Gibu village"
+  },
+  "688": {
+    "objectID": 311225,
+    "city": "Bwebwaija"
+  },
+  "689": {
+    "objectID": 309783,
+    "city": "Lasem"
+  },
+  "690": {
+    "objectID": 309832,
+    "city": "Fumban"
+  },
+  "691": {
+    "objectID": 309852,
+    "city": "Bogotá and Tunja"
+  },
+  "692": {
+    "objectID": 310014,
+    "city": "Seseriman village"
+  },
+  "693": {
+    "objectID": 310048,
+    "city": "Mariwai (?)"
+  },
+  "694": {
+    "objectID": 310071,
+    "city": "Singarin village"
+  },
+  "695": {
+    "objectID": 310093,
+    "city": "Mariwai"
+  },
+  "696": {
+    "objectID": 310174,
+    "city": "Kingdom of Benin"
+  },
+  "697": {
+    "objectID": 310177,
+    "city": "Oshogbo area"
+  },
+  "698": {
+    "objectID": 310179,
+    "city": "M'bahiakro area"
+  },
+  "699": {
+    "objectID": 310182,
+    "city": "Daman (near Ashemi Babwei)"
+  },
+  "700": {
+    "objectID": 310183,
+    "city": "Bondoukou village"
+  },
+  "701": {
+    "objectID": 310187,
+    "city": "Nigiru village (?)"
+  },
+  "702": {
+    "objectID": 312023,
+    "city": "Mariwai village"
+  },
+  "703": {
+    "objectID": 310287,
+    "city": "Brazzaville"
+  },
+  "704": {
+    "objectID": 310321,
+    "city": "Bandiagara region"
+  },
+  "705": {
+    "objectID": 310368,
+    "city": "Fomena (?)"
+  },
+  "706": {
+    "objectID": 310369,
+    "city": "Fomena"
+  },
+  "707": {
+    "objectID": 310452,
+    "city": "Epe region"
+  },
+  "708": {
+    "objectID": 310472,
+    "city": "Nautla region (?)"
+  },
+  "709": {
+    "objectID": 310509,
+    "city": "South Coast"
+  },
+  "710": {
+    "objectID": 310533,
+    "city": "Boca del Río"
+  },
+  "711": {
+    "objectID": 310604,
+    "city": "Iztlan del Río"
+  },
+  "712": {
+    "objectID": 310662,
+    "city": "Tembladera"
+  },
+  "713": {
+    "objectID": 312449,
+    "city": "Bougouni region"
+  },
+  "714": {
+    "objectID": 312464,
+    "city": "Kissodougou region (?)"
+  },
+  "715": {
+    "objectID": 312503,
+    "city": "San Carlos area"
+  },
+  "716": {
+    "objectID": 312519,
+    "city": "Offa"
+  },
+  "717": {
+    "objectID": 311616,
+    "city": "Sauwa village"
+  },
+  "718": {
+    "objectID": 311618,
+    "city": "Erma village"
+  },
+  "719": {
+    "objectID": 311619,
+    "city": "Pupis village"
+  },
+  "720": {
+    "objectID": 311620,
+    "city": "probably Pupis village"
+  },
+  "721": {
+    "objectID": 311623,
+    "city": "Bu"
+  },
+  "722": {
+    "objectID": 311624,
+    "city": "Momogo village"
+  },
+  "723": {
+    "objectID": 311625,
+    "city": "Jipajer village"
+  },
+  "724": {
+    "objectID": 311626,
+    "city": "Komor village"
+  },
+  "725": {
+    "objectID": 311628,
+    "city": "Monu village"
+  },
+  "726": {
+    "objectID": 311629,
+    "city": "Tomor (Tjemor) village"
+  },
+  "727": {
+    "objectID": 311632,
+    "city": "Sagapu village"
+  },
+  "728": {
+    "objectID": 311633,
+    "city": "Amanamkai village"
+  },
+  "729": {
+    "objectID": 311634,
+    "city": "Biwar village"
+  },
+  "730": {
+    "objectID": 311635,
+    "city": "Omadesep village"
+  },
+  "731": {
+    "objectID": 311651,
+    "city": "Nissan or Bougainville Island"
+  },
+  "732": {
+    "objectID": 311672,
+    "city": "Otsjanep village"
+  },
+  "733": {
+    "objectID": 311689,
+    "city": "probably Otsjanep village"
+  },
+  "734": {
+    "objectID": 311718,
+    "city": "probably Per village"
+  },
+  "735": {
+    "objectID": 311727,
+    "city": "Nolato"
+  },
+  "736": {
+    "objectID": 311745,
+    "city": "Ambisu village"
+  },
+  "737": {
+    "objectID": 311747,
+    "city": "Ambisu or Amanamkai village"
+  },
+  "738": {
+    "objectID": 311748,
+    "city": "Sjuru village"
+  },
+  "739": {
+    "objectID": 311919,
+    "city": "Wosiak"
+  },
+  "740": {
+    "objectID": 310864,
+    "city": "Bamako region"
+  },
+  "741": {
+    "objectID": 310866,
+    "city": "Fumban City"
+  },
+  "742": {
+    "objectID": 310884,
+    "city": "Ewer village"
+  },
+  "743": {
+    "objectID": 310887,
+    "city": "Per village"
+  },
+  "744": {
+    "objectID": 310889,
+    "city": "Dimiri village"
+  },
+  "745": {
+    "objectID": 310898,
+    "city": "Manep village"
+  },
+  "746": {
+    "objectID": 310909,
+    "city": "Jaun or Jufri village"
+  },
+  "747": {
+    "objectID": 310910,
+    "city": "Jaun or Jufri village (?)"
+  },
+  "748": {
+    "objectID": 310924,
+    "city": "Akpa or Upu village"
+  },
+  "749": {
+    "objectID": 310929,
+    "city": "Diop village, near Ibi"
+  },
+  "750": {
+    "objectID": 310963,
+    "city": "Otobi village"
+  },
+  "751": {
+    "objectID": 310969,
+    "city": "Timbuktu"
+  },
+  "752": {
+    "objectID": 310971,
+    "city": "San region"
+  },
+  "753": {
+    "objectID": 310973,
+    "city": "Abeokuta region (?)"
+  },
+  "754": {
+    "objectID": 310975,
+    "city": "Meko region"
+  },
+  "755": {
+    "objectID": 311034,
+    "city": "Bamboma village"
+  },
+  "756": {
+    "objectID": 311041,
+    "city": "Takon-Pobé region"
+  },
+  "757": {
+    "objectID": 311065,
+    "city": "Ogidi region"
+  },
+  "758": {
+    "objectID": 311130,
+    "city": "Ogbomosho or Ibadan region"
+  },
+  "759": {
+    "objectID": 311151,
+    "city": "Mindimbit village"
+  },
+  "760": {
+    "objectID": 311160,
+    "city": "Yentschemangua village"
+  },
+  "761": {
+    "objectID": 311162,
+    "city": "Kararau village"
+  },
+  "762": {
+    "objectID": 311165,
+    "city": "Amok village"
+  },
+  "763": {
+    "objectID": 311170,
+    "city": "Tubar village"
+  },
+  "764": {
+    "objectID": 311171,
+    "city": "Orokolo village"
+  },
+  "765": {
+    "objectID": 311178,
+    "city": "Fanla village"
+  },
+  "766": {
+    "objectID": 311182,
+    "city": "Mindimbit or Angriman village (?)"
+  },
+  "767": {
+    "objectID": 313142,
+    "city": "Cajamarca (?)"
+  },
+  "768": {
+    "objectID": 311230,
+    "city": "Kwoiwut"
+  },
+  "769": {
+    "objectID": 311231,
+    "city": "Kanduanum village"
+  },
+  "770": {
+    "objectID": 311235,
+    "city": "Gope"
+  },
+  "771": {
+    "objectID": 311237,
+    "city": "Pai'ia'a village"
+  },
+  "772": {
+    "objectID": 311240,
+    "city": "Utumbuwe"
+  },
+  "773": {
+    "objectID": 311260,
+    "city": "Kanganaman village"
+  },
+  "774": {
+    "objectID": 311262,
+    "city": "Komindimbit village"
+  },
+  "775": {
+    "objectID": 311263,
+    "city": "Komindibit village"
+  },
+  "776": {
+    "objectID": 311307,
+    "city": "Kalgoorlie (?)"
+  },
+  "777": {
+    "objectID": 311313,
+    "city": "Ambonwari village"
+  },
+  "778": {
+    "objectID": 311321,
+    "city": "Gahom village"
+  },
+  "779": {
+    "objectID": 311323,
+    "city": "Gadio or Bizono (?)"
+  },
+  "780": {
+    "objectID": 311329,
+    "city": "Tongwindjamb village"
+  },
+  "781": {
+    "objectID": 311330,
+    "city": "Yamok village"
+  },
+  "782": {
+    "objectID": 311340,
+    "city": "Brungnawe village (?)"
+  },
+  "783": {
+    "objectID": 311350,
+    "city": "Sauwa or Jamas village"
+  },
+  "784": {
+    "objectID": 311356,
+    "city": "Erma"
+  },
+  "785": {
+    "objectID": 311357,
+    "city": "Erma or Sona"
+  },
+  "786": {
+    "objectID": 311369,
+    "city": "Weo (Wejo) village"
+  },
+  "787": {
+    "objectID": 311375,
+    "city": "Bu-Agani village (?)"
+  },
+  "788": {
+    "objectID": 311376,
+    "city": "Agani village"
+  },
+  "789": {
+    "objectID": 311380,
+    "city": "Momogo or Agani village (?)"
+  },
+  "790": {
+    "objectID": 311403,
+    "city": "Jufri village"
+  },
+  "791": {
+    "objectID": 311412,
+    "city": "Pupis village (?)"
+  },
+  "792": {
+    "objectID": 311435,
+    "city": "probaby Manep village"
+  },
+  "793": {
+    "objectID": 311438,
+    "city": "Tomor (Tjemor) or Monu village"
+  },
+  "794": {
+    "objectID": 311468,
+    "city": "Kaimo village"
+  },
+  "795": {
+    "objectID": 311474,
+    "city": "Tjowew"
+  },
+  "796": {
+    "objectID": 311483,
+    "city": "Sauwa village (?)"
+  },
+  "797": {
+    "objectID": 311487,
+    "city": "Sauwa or Saga village"
+  },
+  "798": {
+    "objectID": 311488,
+    "city": "probably Jufri village"
+  },
+  "799": {
+    "objectID": 311510,
+    "city": "Jow"
+  },
+  "800": {
+    "objectID": 311578,
+    "city": "Sogoni village"
+  },
+  "801": {
+    "objectID": 312117,
+    "city": "Yasyin village"
+  },
+  "802": {
+    "objectID": 312119,
+    "city": "Yau village"
+  },
+  "803": {
+    "objectID": 312120,
+    "city": "Mayo Yau village"
+  },
+  "804": {
+    "objectID": 312124,
+    "city": "Yirrkala"
+  },
+  "805": {
+    "objectID": 312179,
+    "city": "Cape Palmas region (?)"
+  },
+  "806": {
+    "objectID": 312182,
+    "city": "Ogbomosho region"
+  },
+  "807": {
+    "objectID": 312277,
+    "city": "Abomey"
+  },
+  "808": {
+    "objectID": 312370,
+    "city": "San region (?)"
+  },
+  "809": {
+    "objectID": 312371,
+    "city": "Mopti region"
+  },
+  "810": {
+    "objectID": 312376,
+    "city": "Bélédougou region"
+  },
+  "811": {
+    "objectID": 312378,
+    "city": "Bougouni region (?)"
+  },
+  "812": {
+    "objectID": 312379,
+    "city": "Koutiala region"
+  },
+  "813": {
+    "objectID": 312398,
+    "city": "Korhogo"
+  },
+  "814": {
+    "objectID": 312399,
+    "city": "Korhogo region"
+  },
+  "815": {
+    "objectID": 312402,
+    "city": "Bondoukou Town"
+  },
+  "816": {
+    "objectID": 312416,
+    "city": "Korhogo region (?)"
+  },
+  "817": {
+    "objectID": 312427,
+    "city": "Kumasi city"
+  },
+  "818": {
+    "objectID": 314326,
+    "city": "Gbongan region"
+  },
+  "819": {
+    "objectID": 314357,
+    "city": "Bougozemi region"
+  },
+  "820": {
+    "objectID": 314380,
+    "city": "Wingei village"
+  },
+  "821": {
+    "objectID": 314384,
+    "city": "Kamangaui"
+  },
+  "822": {
+    "objectID": 314404,
+    "city": "Odo Owa"
+  },
+  "823": {
+    "objectID": 314409,
+    "city": "Saki region"
+  },
+  "824": {
+    "objectID": 314420,
+    "city": "Ilobu, Erin or Oshogbo region"
+  },
+  "825": {
+    "objectID": 314428,
+    "city": "Iseyin or Saki region"
+  },
+  "826": {
+    "objectID": 314432,
+    "city": "Porto Novo region (?)"
+  },
+  "827": {
+    "objectID": 314446,
+    "city": "Chikwawa district"
+  },
+  "828": {
+    "objectID": 314453,
+    "city": "Saki region (?)"
+  },
+  "829": {
+    "objectID": 312587,
+    "city": "Cholula"
+  },
+  "830": {
+    "objectID": 312735,
+    "city": "Bogota and Tunja region"
+  },
+  "831": {
+    "objectID": 312768,
+    "city": "Lamar area"
+  },
+  "832": {
+    "objectID": 312908,
+    "city": "Bridgeport area"
+  },
+  "833": {
+    "objectID": 314833,
+    "city": "Itelinu or Warumoi"
+  },
+  "834": {
+    "objectID": 314856,
+    "city": "Abeokuta region"
+  },
+  "835": {
+    "objectID": 314906,
+    "city": "Trokpadrou village"
+  },
+  "836": {
+    "objectID": 314965,
+    "city": "Aitape (?)"
+  },
+  "837": {
+    "objectID": 314968,
+    "city": "Kokonau village"
+  },
+  "838": {
+    "objectID": 314974,
+    "city": "Ila Orangun region"
+  },
+  "839": {
+    "objectID": 314990,
+    "city": "Uromi region"
+  },
+  "840": {
+    "objectID": 311938,
+    "city": "Hamuhamu"
+  },
+  "841": {
+    "objectID": 311951,
+    "city": "Tongwindjam"
+  },
+  "842": {
+    "objectID": 311952,
+    "city": "Tongwindjam village"
+  },
+  "843": {
+    "objectID": 311953,
+    "city": "Yasyin"
+  },
+  "844": {
+    "objectID": 311958,
+    "city": "Kriambit or Wasare village"
+  },
+  "845": {
+    "objectID": 311962,
+    "city": "Namu village"
+  },
+  "846": {
+    "objectID": 311964,
+    "city": "Aumi village"
+  },
+  "847": {
+    "objectID": 311966,
+    "city": "Inyok village"
+  },
+  "848": {
+    "objectID": 311967,
+    "city": "Wanu village"
+  },
+  "849": {
+    "objectID": 311976,
+    "city": "Bien village"
+  },
+  "850": {
+    "objectID": 311986,
+    "city": "Kauwatyi or Koinambe"
+  },
+  "851": {
+    "objectID": 311990,
+    "city": "Wapi village"
+  },
+  "852": {
+    "objectID": 312003,
+    "city": "Tinnibuli"
+  },
+  "853": {
+    "objectID": 313839,
+    "city": "Rotorua"
+  },
+  "854": {
+    "objectID": 313847,
+    "city": "Aibom village"
+  },
+  "855": {
+    "objectID": 313849,
+    "city": "Angriman village"
+  },
+  "856": {
+    "objectID": 313859,
+    "city": "Porapora village"
+  },
+  "857": {
+    "objectID": 313877,
+    "city": "Gisbourne"
+  },
+  "858": {
+    "objectID": 313882,
+    "city": "Havasea village"
+  },
+  "859": {
+    "objectID": 313897,
+    "city": "Mangan"
+  },
+  "860": {
+    "objectID": 313908,
+    "city": "Kaningarra"
+  },
+  "861": {
+    "objectID": 313919,
+    "city": "Swagup village"
+  },
+  "862": {
+    "objectID": 313921,
+    "city": "Itelinu"
+  },
+  "863": {
+    "objectID": 313978,
+    "city": "Burume village"
+  },
+  "864": {
+    "objectID": 313980,
+    "city": "Kubka"
+  },
+  "865": {
+    "objectID": 313996,
+    "city": "Telefolip village"
+  },
+  "866": {
+    "objectID": 314005,
+    "city": "Munggwal"
+  },
+  "867": {
+    "objectID": 314012,
+    "city": "Mukabuki village"
+  },
+  "868": {
+    "objectID": 314019,
+    "city": "Telefomin"
+  },
+  "869": {
+    "objectID": 314034,
+    "city": "Buli village"
+  },
+  "870": {
+    "objectID": 314046,
+    "city": "Owerri, Okobo or Ahoada region"
+  },
+  "871": {
+    "objectID": 314047,
+    "city": "Ikorodu region"
+  },
+  "872": {
+    "objectID": 314074,
+    "city": "Ilaro region"
+  },
+  "873": {
+    "objectID": 314086,
+    "city": "Ibadan or Ogbomosho region"
+  },
+  "874": {
+    "objectID": 314094,
+    "city": "Djitoumou region"
+  },
+  "875": {
+    "objectID": 314214,
+    "city": "Ngamanie (?)"
+  },
+  "876": {
+    "objectID": 314252,
+    "city": "Dabakala City"
+  },
+  "877": {
+    "objectID": 314263,
+    "city": "Agirigi region"
+  },
+  "878": {
+    "objectID": 314506,
+    "city": "Lagos region"
+  },
+  "879": {
+    "objectID": 314606,
+    "city": "Pantisawa"
+  },
+  "880": {
+    "objectID": 314612,
+    "city": "Meko"
+  },
+  "881": {
+    "objectID": 314738,
+    "city": "Ifon region"
+  },
+  "882": {
+    "objectID": 314743,
+    "city": "Minagoiravi"
+  },
+  "883": {
+    "objectID": 314744,
+    "city": "Waitari"
+  },
+  "884": {
+    "objectID": 314746,
+    "city": "Kinomere village"
+  },
+  "885": {
+    "objectID": 314749,
+    "city": "Omaumere village"
+  },
+  "886": {
+    "objectID": 314754,
+    "city": "Ubuo"
+  },
+  "887": {
+    "objectID": 314756,
+    "city": "Gipi"
+  },
+  "888": {
+    "objectID": 314780,
+    "city": "Ouagadougou City"
+  },
+  "889": {
+    "objectID": 316811,
+    "city": "Balbalan"
+  },
+  "890": {
+    "objectID": 313600,
+    "city": "Mendam village"
+  },
+  "891": {
+    "objectID": 313618,
+    "city": "Bogadjim village"
+  },
+  "892": {
+    "objectID": 313629,
+    "city": "Kabiterau village"
+  },
+  "893": {
+    "objectID": 313667,
+    "city": "possibly Fantan village"
+  },
+  "894": {
+    "objectID": 313670,
+    "city": "Angoram village"
+  },
+  "895": {
+    "objectID": 313682,
+    "city": "Karau village"
+  },
+  "896": {
+    "objectID": 313683,
+    "city": "Kambaramba village"
+  },
+  "897": {
+    "objectID": 313701,
+    "city": "Simar or Mutatungri (?)"
+  },
+  "898": {
+    "objectID": 313730,
+    "city": "Timbunke village"
+  },
+  "899": {
+    "objectID": 313733,
+    "city": "Domara"
+  },
+  "900": {
+    "objectID": 313757,
+    "city": "Moyamba region"
+  },
+  "901": {
+    "objectID": 313777,
+    "city": "Yamas village"
+  },
+  "902": {
+    "objectID": 313779,
+    "city": "Kaimbiam village"
+  },
+  "903": {
+    "objectID": 313796,
+    "city": "Gisborne"
+  },
+  "904": {
+    "objectID": 313802,
+    "city": "Aketa village"
+  },
+  "905": {
+    "objectID": 313808,
+    "city": "Munu village"
+  },
+  "906": {
+    "objectID": 313821,
+    "city": "Wapo village (?)"
+  },
+  "907": {
+    "objectID": 313823,
+    "city": "Tamin (?)"
+  },
+  "908": {
+    "objectID": 313824,
+    "city": "Vanikoro"
+  },
+  "909": {
+    "objectID": 315877,
+    "city": "Abeokuta region, Itoko quarter"
+  },
+  "910": {
+    "objectID": 315879,
+    "city": "Agwa or Ogbaku region"
+  },
+  "911": {
+    "objectID": 315880,
+    "city": "Tambanum village"
+  },
+  "912": {
+    "objectID": 315908,
+    "city": "Ilesha region"
+  },
+  "913": {
+    "objectID": 315909,
+    "city": "Oshogbo region (?)"
+  },
+  "914": {
+    "objectID": 315918,
+    "city": "Solo (Surakarta) district"
+  },
+  "915": {
+    "objectID": 315919,
+    "city": "Jogiakarta"
+  },
+  "916": {
+    "objectID": 315923,
+    "city": "Tenganan Pageringsingan village"
+  },
+  "917": {
+    "objectID": 315928,
+    "city": "Sumatra"
+  },
+  "918": {
+    "objectID": 315938,
+    "city": "Galumpang (Mangki)"
+  },
+  "919": {
+    "objectID": 315940,
+    "city": "Sembiran"
+  },
+  "920": {
+    "objectID": 315968,
+    "city": "Seba"
+  },
+  "921": {
+    "objectID": 313221,
+    "city": "Key Marco (?)"
+  },
+  "922": {
+    "objectID": 313257,
+    "city": "Puerto González Víquez"
+  },
+  "923": {
+    "objectID": 313260,
+    "city": "Guanajunato area (?)"
+  },
+  "924": {
+    "objectID": 313322,
+    "city": "Tiffin area"
+  },
+  "925": {
+    "objectID": 315456,
+    "city": "Mareda"
+  },
+  "926": {
+    "objectID": 315457,
+    "city": "Sa'dan (?)"
+  },
+  "927": {
+    "objectID": 315042,
+    "city": "Auguena village"
+  },
+  "928": {
+    "objectID": 315043,
+    "city": "Transvaal region"
+  },
+  "929": {
+    "objectID": 315064,
+    "city": "Ikenne region"
+  },
+  "930": {
+    "objectID": 316367,
+    "city": "Nyaurengai village"
+  },
+  "931": {
+    "objectID": 316368,
+    "city": "Marienberg or Kandinbuang"
+  },
+  "932": {
+    "objectID": 316405,
+    "city": "Sumba"
+  },
+  "933": {
+    "objectID": 316409,
+    "city": "Ronkong or Palu"
+  },
+  "934": {
+    "objectID": 316411,
+    "city": "Ronkong"
+  },
+  "935": {
+    "objectID": 316415,
+    "city": "Piya"
+  },
+  "936": {
+    "objectID": 316417,
+    "city": "Hanauberak village"
+  },
+  "937": {
+    "objectID": 316418,
+    "city": "Kalianda"
+  },
+  "938": {
+    "objectID": 316512,
+    "city": "Court of Benin (?)"
+  },
+  "939": {
+    "objectID": 316648,
+    "city": "Ouahigouya"
+  },
+  "940": {
+    "objectID": 316660,
+    "city": "Akwa region"
+  },
+  "941": {
+    "objectID": 316744,
+    "city": "Idahin"
+  },
+  "942": {
+    "objectID": 316764,
+    "city": "El Chanal area"
+  },
+  "943": {
+    "objectID": 317195,
+    "city": "Imerina village"
+  },
+  "944": {
+    "objectID": 318630,
+    "city": "Luiza area"
+  },
+  "945": {
+    "objectID": 318684,
+    "city": "Hlabisa village"
+  },
+  "946": {
+    "objectID": 318691,
+    "city": "KwaZulu-Natal region"
+  },
+  "947": {
+    "objectID": 317616,
+    "city": "Sinoe County"
+  },
+  "948": {
+    "objectID": 317698,
+    "city": "Gaikarobi (?)"
+  },
+  "949": {
+    "objectID": 317716,
+    "city": "Kapriman village (?)"
+  },
+  "950": {
+    "objectID": 317722,
+    "city": "Efon-Alaiye region (?)"
+  },
+  "951": {
+    "objectID": 317728,
+    "city": "Aribinda city region, Idrissa"
+  },
+  "952": {
+    "objectID": 317733,
+    "city": "Krinjabo (?)"
+  },
+  "953": {
+    "objectID": 317736,
+    "city": "Chuquibamba"
+  },
+  "954": {
+    "objectID": 317780,
+    "city": "Oshogbo region"
+  },
+  "955": {
+    "objectID": 317822,
+    "city": "Ouri village (?)"
+  },
+  "956": {
+    "objectID": 317825,
+    "city": "Higuëy, Macao area, reportedly"
+  },
+  "957": {
+    "objectID": 317826,
+    "city": "San Juan de la Maguana, reportedly"
+  },
+  "958": {
+    "objectID": 317827,
+    "city": "Distrito Nacional, La Caleta, reportedly"
+  },
+  "959": {
+    "objectID": 317845,
+    "city": "Idahin region"
+  },
+  "960": {
+    "objectID": 317871,
+    "city": "Boulsa region"
+  },
+  "961": {
+    "objectID": 317950,
+    "city": "Lumajanj village"
+  },
+  "962": {
+    "objectID": 317968,
+    "city": "Papar (?)"
+  },
+  "963": {
+    "objectID": 316806,
+    "city": "Nomo Hoshu village"
+  },
+  "964": {
+    "objectID": 318001,
+    "city": "Iseyin region"
+  },
+  "965": {
+    "objectID": 318020,
+    "city": "Eastern Cape"
+  },
+  "966": {
+    "objectID": 318098,
+    "city": "Galumpang or Rongkong"
+  },
+  "967": {
+    "objectID": 318335,
+    "city": "Bonwire"
+  },
+  "968": {
+    "objectID": 318357,
+    "city": "United States"
+  },
+  "969": {
+    "objectID": 318417,
+    "city": "City of Abomey"
+  },
+  "970": {
+    "objectID": 318458,
+    "city": "Akwete"
+  },
+  "971": {
+    "objectID": 318536,
+    "city": "Bida region (?)"
+  },
+  "972": {
+    "objectID": 319455,
+    "city": "Beleco village"
+  },
+  "973": {
+    "objectID": 319854,
+    "city": "Kanduanam village"
+  },
+  "974": {
+    "objectID": 319872,
+    "city": "Nsukka"
+  },
+  "975": {
+    "objectID": 320504,
+    "city": "Saint-Louis"
+  },
+  "976": {
+    "objectID": 320507,
+    "city": "Kelequis"
+  },
+  "977": {
+    "objectID": 320599,
+    "city": "Cross River Region"
+  },
+  "978": {
+    "objectID": 320600,
+    "city": "El Djem"
+  },
+  "979": {
+    "objectID": 320850,
+    "city": "Galumpang"
+  },
+  "980": {
+    "objectID": 321319,
+    "city": "Owo"
+  },
+  "981": {
+    "objectID": 318742,
+    "city": "Vatbuyang village"
+  },
+  "982": {
+    "objectID": 318968,
+    "city": "Ibadan region"
+  },
+  "983": {
+    "objectID": 319080,
+    "city": "Bella Bella (?)"
+  },
+  "984": {
+    "objectID": 334185,
+    "city": "Edinburgh"
+  },
+  "985": {
+    "objectID": 334262,
+    "city": "Calcutta"
+  },
+  "986": {
+    "objectID": 334452,
+    "city": "[Augsburg]"
+  },
+  "987": {
+    "objectID": 334459,
+    "city": "West Islip, Long Island"
+  },
+  "988": {
+    "objectID": 334461,
+    "city": "Leipzig"
+  },
+  "989": {
+    "objectID": 334462,
+    "city": "The Hague"
+  },
+  "990": {
+    "objectID": 334464,
+    "city": "Brussels and Louvain"
+  },
+  "991": {
+    "objectID": 334498,
+    "city": "London (Vol. II)"
+  },
+  "992": {
+    "objectID": 330104,
+    "city": "Paterna"
+  },
+  "993": {
+    "objectID": 333829,
+    "city": "Newcastle-upon-Tyne"
+  },
+  "994": {
+    "objectID": 334510,
+    "city": "Zaltbommel"
+  },
+  "995": {
+    "objectID": 334582,
+    "city": "France"
+  },
+  "996": {
+    "objectID": 334636,
+    "city": "Darmstadt"
+  },
+  "997": {
+    "objectID": 336934,
+    "city": "Stuttgart"
+  },
+  "998": {
+    "objectID": 337061,
+    "city": "Ingolstadt"
+  },
+  "999": {
+    "objectID": 337333,
+    "city": "Gera"
+  }
 }

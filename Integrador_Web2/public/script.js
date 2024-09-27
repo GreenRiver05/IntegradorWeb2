@@ -51,7 +51,8 @@ async function cargarLocalidades() {
 
         Object.values(json).forEach(el => {
             const option2 = document.createElement("option");
-            option2.value = el;
+            option2.value = el.city;
+            option2.dataset.id = el.objectID;
             $fragmentLocalidades.appendChild(option2);
 
         });
@@ -324,4 +325,65 @@ cargarDepartamentos();
 cargarLocalidades();
 artePresentacion();
 
+
+// async function consumirLocalidades() { 
+
+//     const misLocalidades = {};
+//     let numAux = 0;
+//     let numLocalidades = 0;
+//     let numTOTAL = 0
+//     const maxLocalidades = 1000;
+//     try {
+
+//         let resTodos = await fetch(URL_OBJETOS),
+//             jsonTodos = await resTodos.json();
+
+//         if (!resTodos.ok) throw { status: resTodos.status, statusText: resTodos.statusText }; //SI "res.ok" ES FALSO, ENTONCES EL "throw" RETORNA EL FLUJO AL "catch"
+
+//         if (numLocalidades == 0) {
+
+//             for (const el of jsonTodos.objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
+//                 if (numAux >= maxLocalidades) break; // Sal del bucle si ya has alcanzado el límite
+//                 numTOTAL++;
+//                 console.log(`OBJETOS ENCONTRADOS: ${numTOTAL} //// OBJETO ID: ${el}`);
+               
+//                 try {
+//                     let resSolo = await fetch(URL_OBJETOID + el);
+//                     let jsonSolo = await resSolo.json();
+
+//                     if (!resSolo.ok) throw { status: resSolo.status, statusText: resSolo.statusText };
+
+//                     if (jsonSolo && jsonSolo.city.trim() !== "" && !Object.values(misLocalidades).some(loc => loc.city === jsonSolo.city)) {
+//                         misLocalidades[numAux] = {
+//                             objectID: el,
+//                             city: jsonSolo.city
+//                         }
+//                         numLocalidades++;
+//                         numAux++;
+//                         console.log(`ID: ${el} - Localidad: ${jsonSolo.city} LOCALIDADES GUARDADAS: ${numLocalidades}`);
+//                     }
+//                 } catch (err) {
+//                     console.error(`Error al procesar el ID ${el}:`, err);
+//                 }
+
+//             };
+
+//             const data = JSON.stringify(misLocalidades, null, 2);
+
+//             fs.writeFile('localidades.json', data, (err) => {
+//                 if (err) {
+//                     console.error('Error al escribir el archivo:', err);
+//                 } else {
+//                     console.log('Archivo escrito correctamente');
+//                 }
+//             });
+//         }
+
+//     } catch (err) {
+
+//         let message = err.statusText || "Ocurrió un error";
+//         // $localidades.innerHTML = `Error ${err.status}: ${message}`;
+//         console.log(message);
+//     }
+// }
 
