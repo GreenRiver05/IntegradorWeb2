@@ -16,6 +16,7 @@ const $listaDepartamentos = document.getElementById("listaDepartamentos"),
 const $listaLocalidad = document.getElementById("listaLocalidad"),
     $fragmentLocalidades = document.createDocumentFragment();
 
+const $spinner = document.getElementById("spinner");
 
 async function cargarDepartamentos() {
 
@@ -67,16 +68,29 @@ async function cargarLocalidades() {
 
 
 async function crearPaginas(objectIDs, parametro) {
-
+    
+    const spinnerContainer = document.createElement('div');
+    $spinner.innerHTML = "";
     let tarjetasPresentacion = "";
+
     let numObjetos = 0;
     let paginaActual = 1;
     let objetosPorPagina = 20;
     let paginas = [];
     let contadorObjetoConsoleLog = 0;
 
+    for (let i = 0; i < 5; i++) {
+        const spinner = document.createElement('div');
+        spinner.className = 'spinner-grow text-danger'; // Clase para cada spinner
+        spinner.role = 'status';
+        spinner.innerHTML = '<span class="visually-hidden">Loading...</span>';
+        spinnerContainer.appendChild(spinner);
+    }
+    
+    $spinner.appendChild(spinnerContainer);
     for (const el of objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
 
+  
         if (parametro === "presentacion" && paginaActual > 1) {
             numObjetos = 0;
             break;
@@ -165,6 +179,8 @@ async function crearPaginas(objectIDs, parametro) {
         paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
         console.log(`pagina N°: ${paginaActual}`);
     }
+
+    spinnerContainer.remove();
     //console.log("TERMINE LA PAGINACION")
     // console.log(paginas[0]);
     // console.log(paginas[1]);
@@ -269,6 +285,7 @@ async function artePresentacion() {
 
 async function obtenerValor() {
     $tarjetas.innerHTML = "";
+
     contenedorBotones.innerHTML = "";
 
     const palabraClave = document.getElementById("palabra clave").value;
