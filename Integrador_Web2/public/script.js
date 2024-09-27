@@ -36,9 +36,9 @@ async function cargarDepartamentos() {
 
     } catch (err) {
         let message = err.statusText || "Ocurrió un error";
-        $buscador.innerHTML = `Error ${err.status}: ${message} || ERROR EN DEPARTAMENTOS`;
+        $tarjetas.innerHTML = `Error ${err.status}: ${message} || ERROR EN DEPARTAMENTOS`;
     }
-  }
+}
 
 
 async function cargarLocalidades() {
@@ -72,14 +72,23 @@ async function crearPaginas(objectIDs, parametro) {
     let paginaActual = 1;
     let objetosPorPagina = 20;
     let paginas = [];
+    let contadorObjetoConsoleLog = 0;
 
     for (const el of objectIDs) { //se utiliza un bucle for/of en lugar de forEach para poder usar await dentro del bucle.
 
-        if (parametro === "presentacion" && paginaActual > 1) break;
-        if (parametro === "buscador" && paginaActual > 5) break;
+        if (parametro === "presentacion" && paginaActual > 1) {
+            numObjetos = 0;
+            break;
+        }
+
+        if (parametro === "buscador" && paginaActual > 5) {
+            numObjetos = 0;
+            break;
+        }
         //console.log(el);
 
         if (numObjetos >= objetosPorPagina) {
+            console.log(`pagina N°: ${paginaActual}`);
             paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
             tarjetasPresentacion = "";
             numObjetos = 0;
@@ -109,9 +118,10 @@ async function crearPaginas(objectIDs, parametro) {
             });
 
             if (!resLocal.ok) throw { status: resLocal.status, statusText: resLocal.statusText };
-
+            contadorObjetoConsoleLog++;
             let datosTraducidos = await resLocal.json();
-            console.log('Objeto traducido:', datosTraducidos[0].titulo);
+            // console.log('Objeto traducido:', datosTraducidos[0].titulo);
+            console.log(`objeto N°: ${contadorObjetoConsoleLog}`);
 
 
             tarjetasPresentacion += `
@@ -152,6 +162,7 @@ async function crearPaginas(objectIDs, parametro) {
 
     if (numObjetos > 0) {
         paginas.push({ pagina: paginaActual, tarjetas: tarjetasPresentacion });
+        console.log(`pagina N°: ${paginaActual}`);
     }
     //console.log("TERMINE LA PAGINACION")
     // console.log(paginas[0]);
@@ -259,13 +270,13 @@ async function obtenerValor() {
     $tarjetas.innerHTML = "";
     contenedorBotones.innerHTML = "";
 
-    const palabraClave = document.getElementById("palabra clave").value.trim();
-    const stringClave = palabraClave === "" ? `q=*` : `q=${encodeURIComponent("palabra clave")}`;
-    //console.log("Palabra Clave seleccionada:", palabraClave);
-
+    const palabraClave = document.getElementById("palabra clave").value;
+    const stringClave = palabraClave === "" ? `q=*` : `q=${(palabraClave)}`;
+    console.log("Palabra Clave seleccionada:", palabraClave);
+    console.log("Palabra Clave seleccionada:", stringClave);
     const departamento = document.getElementById("departamento");
     const opcionDepartamento = Array.from(departamento.list.options).find(option => option.value === departamento.value);
-    const departamentoId = opcionDepartamento ? `&departmentId=${opcionDepartamento.dataset.id}` : null;
+    const departamentoId = opcionDepartamento ? `&departmentId=${opcionDepartamento.dataset.id}` : "";
     //console.log("ID del departamento seleccionado:", departamento);
 
     const localidad = document.getElementById("localidad").value !== "" ? `&geoLocation=${document.getElementById("localidad").value}` : "";
@@ -293,7 +304,7 @@ async function obtenerValor() {
         } else {
             let mezclarArreglo = json.objectIDs.sort(() => 0.5 - Math.random()); //mezclamos el array de objectIDs de manera aleatoria.
 
-            crearPaginas(mezclarArreglo);
+            crearPaginas(mezclarArreglo, "buscador");
         }
 
 
