@@ -118,7 +118,7 @@ async function crearPaginas(objectIDs, parametro) {
 
             // if (jsonObjeto.culture.trim() !== "" && jsonObjeto.objectDate.trim() !== "") { SOLO TRAER OBJETOS CON CULTURAS Y FECHA 
 
-            let resLocal = await fetch('http://localhost:8100/traducir', {
+            let resLocal = await fetch('/traducir', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
